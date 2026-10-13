@@ -1,0 +1,62 @@
+services:
+  mysql:
+    image: mysql:8.4
+    profiles: [legacy-db]
+    environment:
+      MYSQL_DATABASE: finsight
+      MYSQL_USER: ${LEGACY_DB_USER:-finsight}
+      MYSQL_PASSWORD: ${LEGACY_DB_PASSWORD:-${DB_PASSWORD:?Set DB_PASSWORD}}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Set MYSQL_ROOT_PASSWORD}
+    volumes: [mysql_data:/var/lib/mysql]
+    healthcheck:
+      test: [CMD-SHELL, 'MYSQL_PWD="$$MYSQL_PASSWORD" mysql -u "$$MYSQL_USER" -e "SELECT 1" finsight']
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    networks: [internal]
+  ai:
+    build: ./ai-service
+    environment:
+      AI_SERVICE_KEY: ${AI_SERVICE_KEY:?Set AI_SERVICE_KEY}
+      CHAT_PROVIDER: ${CHAT_PROVIDER:-ollama}
+      CHAT_MODEL: ${CHAT_MODEL:-qwen3:1.7b}
+      OLLAMA_URL: ${CONTAINER_OLLAMA_URL:-http://host.docker.internal:11434}
+      CHAT_API_URL: ${CHAT_API_URL:-}
+      CHAT_API_KEY: ${CHAT_API_KEY:-}
+    healthcheck:
+      test: [CMD, python, -c, 'import urllib.request,json; assert json.load(urllib.request.urlopen("http://localhost:8000/health"))["status"] == "UP"']
+      interval: 10s
+      timeout: 3s
+      start_period: 30s
+    networks: [internal]
+  mail:
+    image: axllent/mailpit:v1.27
+    ports: ['127.0.0.1:8026:8025']
+    networks: [internal]
+  backend:
+    build: ./backend
+    environment:
+      DB_URL: ${CONTAINER_DB_URL:-jdbc:mariadb://host.docker.internal:3306/finsight}
+      DB_USER: ${DB_USER:-finsight_xampp}
+      DB_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD}
+      AI_URL: http://ai:8000
+      AI_SERVICE_KEY: ${AI_SERVICE_KEY:?Set AI_SERVICE_KEY}
+      SERVER_ADDRESS: 0.0.0.0
+      FRONTEND_ORIGIN: http://127.0.0.1:8088
+      COOKIE_SECURE: ${COOKIE_SECURE:-false}
+      DEMO_ENABLED: ${DEMO_ENABLED:-false}
+      SMTP_HOST: mail
+      SMTP_PORT: 1025
+      TZ: Asia/Ho_Chi_Minh
+    depends_on:
+      ai: {condition: service_healthy}
+    networks: [internal]
+  frontend:
+    build: ./frontend
+    ports: ['127.0.0.1:8088:80']
+    depends_on: [backend]
+    networks: [internal]
+networks:
+  internal:
+volumes:
+  mysql_data:

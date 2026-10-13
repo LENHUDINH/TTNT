@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#eef0ff", "surface-variant": "#dae2fd", "outline": "#6c7a71", "surface-container-low": "#f2f3ff", "primary-fixed": "#6ffbbe", "secondary": "#00687a", "inverse-primary": "#4edea3", "surface-container-lowest": "#ffffff", "tertiary": "#494bd6", "on-tertiary-container": "#1d17b2", "on-tertiary-fixed": "#07006c", "surface-container-highest": "#dae2fd", "surface-container": "#eaedff", "secondary-container": "#57dffe", "primary-fixed-dim": "#4edea3", "on-primary": "#ffffff", "inverse-surface": "#283044", "on-error-container": "#93000a", "on-surface-variant": "#3c4a42", "on-primary-container": "#00422b", "surface-bright": "#faf8ff", "on-tertiary-fixed-variant": "#2f2ebe", "primary": "#006c49", "on-error": "#ffffff", "secondary-fixed": "#acedff", "on-primary-fixed-variant": "#005236", "error-container": "#ffdad6", "primary-container": "#10b981", "on-secondary-container": "#006172", "secondary-fixed-dim": "#4cd7f6", "tertiary-container": "#9699ff", "surface-dim": "#d2d9f4", "surface-tint": "#006c49", "on-secondary": "#ffffff", "on-background": "#131b2e", "outline-variant": "#bbcabf", "surface-container-high": "#e2e7ff", "on-tertiary": "#ffffff", "on-secondary-fixed-variant": "#004e5c", "on-primary-fixed": "#002113", "background": "#faf8ff", "tertiary-fixed-dim": "#c0c1ff", "tertiary-fixed": "#e1e0ff", "on-secondary-fixed": "#001f26", "error": "#ba1a1a", "on-surface": "#131b2e", "surface": "#faf8ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "margin": "2rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem", "space-xl": "2rem", "space-sm": "0.5rem", "margin-mobile": "1rem" }, "fontFamily": { "headline-md": ["Be Vietnam Pro"], "body-sm": ["Be Vietnam Pro"], "label-sm": ["Be Vietnam Pro"], "display-lg": ["Be Vietnam Pro"], "data-metric-lg": ["Be Vietnam Pro"], "label-md": ["Be Vietnam Pro"], "body-lg": ["Be Vietnam Pro"], "body-md": ["Be Vietnam Pro"], "headline-lg": ["Be Vietnam Pro"], "data-metric-md": ["Be Vietnam Pro"], "data-table": ["Be Vietnam Pro"], "display-lg-mobile": ["Be Vietnam Pro"], "headline-sm": ["Be Vietnam Pro"] }, "fontSize": { "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "data-metric-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "data-metric-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "data-table": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "500" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest"><img alt="Logo FinSight AI" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WJfB8uGwgKwCVy98ZxKmFBeVdVtnMCy5cQmIg5LH76oFiqRcx0EJuXyGz4DjNF7EgBs6QyCa6j09dhyYIdiSUmZu9z--HZtWAd7tevu0mKO5XDxlqSf_D2Pg4Qd1MeEpSw_JtaXm5aouEhJp8j1HyVwHkoU-FNXYDFO1S-u3W5Aul-xQyylVhVhJO8vD_fnUJbCQLCkaKUhnDS-q-xm9iL6yA2AahgsGtQWmQR6WNOl_e2KUw73zJCTkPZ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">FinSight AI</span><span class="font-label-sm text-label-sm text-outline tracking-wider uppercase mt-space-xs">Private Wealth</span></div></div><div class="flex-1 overflow-y-auto px-space-md py-space-sm"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_2px_8px_rgba(16,185,129,0.2)]"><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="tong-quan" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-outline">grid_view</span><span class="font-body-md text-body-md">Tổng quan</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="giao-dich" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-outline">receipt_long</span><span class="font-body-md text-body-md">Giao dịch</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="vi-cua-toi" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-outline">account_balance_wallet</span><span class="font-body-md text-body-md">Ví của tôi</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-space-container-high hover:text-on-surface transition-all duration-150" data-path="ngan-sach" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-outline">pie_chart</span><span class="font-body-md text-body-md">Ngân sách</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="muc-tieu-tiet-kiem" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-outline">savings</span><span class="font-body-md text-body-md">Mục tiêu tiết kiệm</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="du-bao-ai" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-tertiary">auto_awesome</span><span class="font-body-md text-body-md">Dự báo AI</span></div><span class="px-space-xs py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase tracking-wide">AI</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="giao-dich-bat-thuong" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-error">warning</span><span class="font-body-md text-body-md">Giao dịch bất thường</span></div><span class="px-space-xs py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">Cảnh báo</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="bao-cao" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-outline">bar_chart</span><span class="font-body-md text-body-md">Báo cáo</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="cai-dat" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-outline">settings</span><span class="font-body-md text-body-md">Cài đặt</span></div></a></nav></div></div><div class="p-space-md bg-surface-container-low"><div class="p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_4px_rgba(0,0,0,0.03)] mb-space-sm"><div class="flex items-center justify-between mb-space-xs"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px]">verified</span><span class="font-label-md text-label-md text-on-surface font-bold">FinSight Pro</span></div><span class="font-label-sm text-label-sm text-primary font-bold">Hoạt động</span></div><div class="w-full bg-surface-container rounded-full h-1.5 mb-space-xs overflow-hidden"><div class="bg-primary-container h-1.5 rounded-full w-4/5"></div></div><div class="flex justify-between items-center text-outline"><span class="font-label-sm text-label-sm">Đồng bộ dữ liệu</span><span class="font-label-sm text-label-sm font-semibold text-on-surface-variant">82%</span></div></div><a class="flex items-center justify-center gap-space-sm w-full py-space-sm rounded-xl text-outline hover:bg-surface-container-high hover:text-error transition-all duration-150" data-path="dang-xuat" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-label-md text-label-md">Đăng xuất</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-xs text-outline font-body-sm text-body-sm"><span class="hover:text-on-surface cursor-pointer">Trang chủ</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-on-surface font-semibold">Quản lý tài sản</span></div><div class="relative flex items-center w-80 xl:w-96"><span class="material-symbols-outlined absolute left-3 text-outline text-[20px]">search</span><input class="w-full h-10 pl-10 pr-space-md bg-surface-container-low rounded-xl text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" placeholder="Tìm kiếm giao dịch, ví, báo cáo..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1.5 bg-surface-container-low rounded-xl text-on-surface-variant font-label-md text-label-md cursor-pointer hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[18px] text-outline">calendar_today</span><span>Tháng này (11/2024)</span><span class="material-symbols-outlined text-[16px] text-outline">arrow_drop_down</span></div><div class="flex items-center gap-space-xs"><button class="relative p-2 rounded-xl text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><button class="p-2 rounded-xl text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">light_mode</span></button></div><div class="h-8 w-px bg-surface-container-high mx-space-xs"></div><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqABBjt8nbkDCq6cVMgS7SIAghjjf2FQ_M5k_xi30z9uKtyTNeX1dxGPNFXcQLNX56e3Np9VnrMUZ0y9KA35X3W0053d8z9ffqSDLGcNNXjrRV8_azpZWYr5Whqe8rR46QZgERE6tpIFO-piKY4IC516kzPE71z-e4kjJsc757JhQ7aW9GrRmvsSfstxeYqWTZ0jQWEluyxTwOfERn8U-oNZo4pIcno9WxvgnZj7b6NPGhwvrEiinxAA"/><div class="hidden xl:flex flex-col"><span class="font-label-md text-label-md text-on-surface leading-tight">Nguyễn Minh Quân</span><span class="font-label-sm text-label-sm text-outline leading-tight">Chuyên viên cao cấp</span></div></div></div></header><main class="relative pt-16 bg-background min-h-screen px-space-lg py-space-lg w-full"><div class="flex flex-col w-full gap-space-lg pb-space-xl">
+<!-- Active Sidebar Script Fix -->
+<script>
+    (function () {
+      const navLinks = document.querySelectorAll('aside nav a');
+      navLinks.forEach((link) => {
+        if (link.getAttribute('data-path') === 'bao-cao') {
+          link.className = 'flex items-center justify-between px-space-md py-space-sm rounded-xl bg-primary-container text-on-primary font-bold shadow-[0_2px_8px_rgba(16,185,129,0.2)] transition-all duration-150';
+          const icon = link.querySelector('.material-symbols-outlined');
+          if (icon) {
+            icon.classList.remove('text-outline');
+            icon.classList.add('text-on-primary');
+          }
+        } else {
+          link.classList.remove('bg-primary-container', 'text-on-primary', 'font-bold');
+        }
+      });
+    })();
+  </script>
+<!-- Top Page Header & Context Toolbar -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-outline font-label-md text-label-md uppercase tracking-wider mb-space-xs">
+<span class="material-symbols-outlined text-primary text-[16px]">analytics</span>
+<span>FinSight Intelligence • Chu kỳ Q4/2024</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+        Báo cáo &amp; Phân tích chuyên sâu
+      </h1>
+<p class="font-body-md text-body-md text-outline mt-0.5">
+        Báo cáo chi tiết dòng tiền, hiệu suất ngân sách và phân tích sức khỏe tài chính toàn diện.
+      </p>
+</div>
+<!-- Filters & Actions -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center p-1 bg-surface-container-low rounded-xl shadow-sm">
+<button class="px-space-md py-1.5 rounded-lg text-outline font-label-md text-label-md hover:text-on-surface transition-colors" type="button">Tháng này</button>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm font-semibold transition-all" type="button">Quý 4/2024</button>
+<button class="px-space-md py-1.5 rounded-lg text-outline font-label-md text-label-md hover:text-on-surface transition-colors" type="button">Cả năm 2024</button>
+<button class="px-space-md py-1.5 rounded-lg text-outline font-label-md text-label-md hover:text-on-surface transition-colors flex items-center gap-1" type="button">
+<span>Tùy chỉnh</span>
+<span class="material-symbols-outlined text-[14px]">tune</span>
+</button>
+</div>
+<div class="relative">
+<button class="flex items-center gap-space-xs px-space-md py-2 bg-surface-container-lowest rounded-xl shadow-sm text-on-surface font-label-md text-label-md hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-secondary text-[18px]">account_balance_wallet</span>
+<span>Tất cả nguồn ví (5)</span>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-space-xs px-space-md py-2 bg-surface-container-lowest text-on-surface hover:text-primary rounded-xl shadow-sm font-label-md text-label-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-error">picture_as_pdf</span>
+<span class="hidden sm:inline">Xuất PDF</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 bg-primary text-on-primary rounded-xl shadow-md hover:bg-on-primary-container font-label-md text-label-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">table_view</span>
+<span>Xuất Excel</span>
+</button>
+</div>
+</div>
+</div>
+<!-- SECTION A: Financial Health Score Mosaic -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Primary Score Card with Circular Gauge -->
+<div class="relative overflow-hidden p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">FinSight Score</span>
+<span class="flex items-center gap-0.5 px-space-xs py-0.5 bg-primary-fixed text-on-primary-fixed-variant rounded-full font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span> Ổn định cao
+        </span>
+</div>
+<div class="my-space-md flex items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-baseline gap-1">
+<span class="font-display-lg text-display-lg text-primary tabular-nums tracking-tight">86</span>
+<span class="font-headline-sm text-headline-sm text-outline font-normal">/100</span>
+</div>
+<span class="font-body-sm text-body-sm text-primary-container font-semibold mt-1">Mức: Rất tốt (+4đ so với Q3)</span>
+</div>
+<!-- SVG Circular Ring Gauge -->
+<div class="relative w-16 h-16 flex-shrink-0">
+<svg class="w-16 h-16 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="86, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]">shield</span>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-outline">Chỉ số rủi ro tín dụng và sức khỏe chi tiêu nằm trong top 5% người dùng ưu tú.</p>
+</div>
+<!-- Savings Rate Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Tỷ lệ tiết kiệm ròng</span>
+<span class="p-1.5 bg-primary-fixed rounded-lg text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-[18px]">savings</span>
+</span>
+</div>
+<div class="my-space-md">
+<div class="font-data-metric-lg text-data-metric-lg text-on-surface tabular-nums">
+          35.8%
+        </div>
+<div class="w-full bg-surface-container rounded-full h-2 mt-space-sm overflow-hidden">
+<div class="bg-primary-container h-2 rounded-full w-[35.8%]"></div>
+</div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-outline">Mục tiêu FinSight: &gt;20%</span>
+<span class="text-primary font-semibold flex items-center">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> +15.8%
+        </span>
+</div>
+</div>
+<!-- Debt to Income (DTI) Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Hệ số nợ / thu nhập (DTI)</span>
+<span class="p-1.5 bg-secondary-fixed rounded-lg text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[18px]">credit_card_off</span>
+</span>
+</div>
+<div class="my-space-md">
+<div class="font-data-metric-lg text-data-metric-lg text-secondary tabular-nums">
+          0.0%
+        </div>
+<div class="flex items-center gap-1 mt-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="font-label-md text-label-md font-semibold">Hoàn toàn không có nợ xấu</span>
+</div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-outline">
+<span>Ngưỡng cảnh báo an toàn</span>
+<span class="text-on-surface font-semibold">&lt; 30%</span>
+</div>
+</div>
+<!-- Liquidity Runway Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Quỹ thanh khoản khẩn cấp</span>
+<span class="p-1.5 bg-tertiary-fixed rounded-lg text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[18px]">hourglass_top</span>
+</span>
+</div>
+<div class="my-space-md">
+<div class="flex items-baseline gap-1.5">
+<span class="font-data-metric-lg text-data-metric-lg text-on-surface tabular-nums">4.2</span>
+<span class="font-headline-sm text-headline-sm text-outline">tháng</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-1">Đủ duy trì trọn vẹn chi phí sinh hoạt định kỳ</p>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-outline">Tối ưu chuẩn Wealth:</span>
+<span class="text-tertiary font-semibold">6.0 tháng (Còn 1.8 thg)</span>
+</div>
+</div>
+</div>
+<!-- SECTION B: Cash Flow Trends & Multi-dimensional Comparison -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- 6-Month Cash Flow Stacked Area/Bar Visual (2 Cols) -->
+<div class="lg:col-span-2 p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-md">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Dòng tiền ròng &amp; Tương quan Thu - Chi</h2>
+<span class="font-body-sm text-body-sm text-outline">Chu kỳ 6 tháng gần nhất (T06/2024 — T11/2024)</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-outline">Thu nhập</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-surface-container-highest"></span>
+<span class="font-label-sm text-label-sm text-outline">Chi tiêu</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-tertiary"></span>
+<span class="font-label-sm text-label-sm text-outline">Tiết kiệm ròng</span>
+</div>
+</div>
+</div>
+<!-- Growth Indicators Bar -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-space-sm p-space-sm rounded-xl bg-surface-container-low mb-space-md">
+<div class="flex flex-col px-space-sm">
+<span class="font-label-sm text-label-sm text-outline">Tăng trưởng thu nhập</span>
+<div class="flex items-center gap-1 text-primary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[20px]">trending_up</span>
+<span class="tabular-nums">+12.4%</span>
+</div>
+</div>
+<div class="flex flex-col px-space-sm">
+<span class="font-label-sm text-label-sm text-outline">Tối ưu chi phí</span>
+<div class="flex items-center gap-1 text-primary-container font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[20px]">trending_down</span>
+<span class="tabular-nums">-5.2%</span>
+</div>
+</div>
+<div class="hidden sm:flex flex-col px-space-sm">
+<span class="font-label-sm text-label-sm text-outline">Dòng tiền thặng dư T11</span>
+<div class="flex items-center gap-1 text-tertiary font-headline-sm text-headline-sm">
+<span class="tabular-nums">+34.500.000₫</span>
+</div>
+</div>
+</div>
+<!-- Inline SVG Chart Representation -->
+<div class="relative w-full h-64 pt-2">
+<svg class="w-full h-full" fill="none" preserveaspectratio="none" viewbox="0 0 600 220">
+<!-- Horizontal Grid Lines -->
+<line class="text-surface-container" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="580" y1="30" y2="30"></line>
+<line class="text-surface-container" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="580" y1="80" y2="80"></line>
+<line class="text-surface-container" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="40" x2="580" y1="130" y2="130"></line>
+<line class="text-surface-container" stroke="currentColor" stroke-width="1" x1="40" x2="580" y1="180" y2="180"></line>
+<!-- Y-axis labels -->
+<text class="text-outline" fill="currentColor" font-size="10" text-anchor="end" x="32" y="34">100M</text>
+<text class="text-outline" fill="currentColor" font-size="10" text-anchor="end" x="32" y="84">60M</text>
+<text class="text-outline" fill="currentColor" font-size="10" text-anchor="end" x="32" y="134">30M</text>
+<text class="text-outline" fill="currentColor" font-size="10" text-anchor="end" x="32" y="184">0</text>
+<!-- Monthly Bar Clusters [T06, T07, T08, T09, T10, T11] -->
+<!-- T06 -->
+<rect class="fill-primary-container opacity-85" height="115" rx="4" width="22" x="75" y="65"></rect>
+<rect class="fill-surface-variant" height="68" rx="4" width="22" x="100" y="112"></rect>
+<text class="text-outline" fill="currentColor" font-size="11" text-anchor="middle" x="98" y="200">T06</text>
+<!-- T07 -->
+<rect class="fill-primary-container opacity-85" height="122" rx="4" width="22" x="160" y="58"></rect>
+<rect class="fill-surface-variant" height="62" rx="4" width="22" x="185" y="118"></rect>
+<text class="text-outline" fill="currentColor" font-size="11" text-anchor="middle" x="183" y="200">T07</text>
+<!-- T08 -->
+<rect class="fill-primary-container opacity-85" height="118" rx="4" width="22" x="245" y="62"></rect>
+<rect class="fill-surface-variant" height="75" rx="4" width="22" x="270" y="105"></rect>
+<text class="text-outline" fill="currentColor" font-size="11" text-anchor="middle" x="268" y="200">T08</text>
+<!-- T09 -->
+<rect class="fill-primary-container opacity-85" height="130" rx="4" width="22" x="330" y="50"></rect>
+<rect class="fill-surface-variant" height="78" rx="4" width="22" x="355" y="102"></rect>
+<text class="text-outline" fill="currentColor" font-size="11" text-anchor="middle" x="353" y="200">T09</text>
+<!-- T10 -->
+<rect class="fill-primary-container opacity-85" height="136" rx="4" width="22" x="415" y="44"></rect>
+<rect class="fill-surface-variant" height="84" rx="4" width="22" x="440" y="96"></rect>
+<text class="text-outline" fill="currentColor" font-size="11" text-anchor="middle" x="438" y="200">T10</text>
+<!-- T11 (Current Month - Highlighted) -->
+<rect class="fill-primary-container" height="148" rx="4" width="22" x="500" y="32"></rect>
+<rect class="fill-surface-variant" height="72" rx="4" width="22" x="525" y="108"></rect>
+<text class="text-primary" fill="currentColor" font-size="11" font-weight="bold" text-anchor="middle" x="523" y="200">T11</text>
+<!-- Line Graph: Net Savings Surplus -->
+<path class="text-tertiary" d="M 86 125 L 171 120 L 256 122 L 341 100 L 426 88 L 511 60" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Dots on Line -->
+<circle class="fill-tertiary" cx="86" cy="125" r="3.5"></circle>
+<circle class="fill-tertiary" cx="171" cy="120" r="3.5"></circle>
+<circle class="fill-tertiary" cx="256" cy="122" r="3.5"></circle>
+<circle class="fill-tertiary" cx="341" cy="100" r="3.5"></circle>
+<circle class="fill-tertiary" cx="426" cy="88" r="3.5"></circle>
+<circle class="fill-surface-container-lowest stroke-tertiary" cx="511" cy="60" r="4.5" stroke-width="2.5"></circle>
+</svg>
+</div>
+</div>
+<!-- Right Side: Net Worth & Financial Runway Insight -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Cấu trúc thặng dư</span>
+<span class="material-symbols-outlined text-secondary">donut_large</span>
+</div>
+<div class="font-headline-md text-headline-md text-on-surface">Tài sản ròng tích lũy</div>
+<div class="font-data-metric-lg text-data-metric-lg text-primary tabular-nums mt-1">1.842.500.000₫</div>
+<div class="flex items-center gap-1 text-primary-container font-label-md text-label-md mt-1">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+8.6% so với đầu quý</span>
+</div>
+<!-- Breakdown Progress Stack -->
+<div class="mt-space-lg flex flex-col gap-space-sm">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-outline">Tiền gửi sinh lời &amp; Trái phiếu (54%)</span>
+<span class="text-on-surface font-semibold tabular-nums">995.000.000₫</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2">
+<div class="bg-primary h-2 rounded-full w-[54%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-outline">Danh mục Cổ phiếu &amp; Chứng chỉ quỹ (32%)</span>
+<span class="text-on-surface font-semibold tabular-nums">589.600.000₫</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2">
+<div class="bg-tertiary h-2 rounded-full w-[32%]"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-outline">Tiền mặt &amp; Tài khoản thanh toán (14%)</span>
+<span class="text-on-surface font-semibold tabular-nums">257.900.000₫</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2">
+<div class="bg-secondary-container h-2 rounded-full w-[14%]"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">verified_user</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Khuyến nghị phân bổ</span>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">
+            Tỷ lệ tiền mặt đang cao hơn 4% so với mô hình tối ưu. Có thể chuyển 50.000.000₫ sang Quỹ mở để tối ưu lãi kép.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION C & SECTION D: Category Breakdown Matrix & Budget Adherence -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- SECTION C: Expense Category Breakdown Table (7 Cols) -->
+<div class="lg:col-span-7 p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Phân tích danh mục chi tiêu &amp; Biến động</h2>
+<span class="font-body-sm text-body-sm text-outline">So sánh cùng kỳ tháng trước (MoM Variance)</span>
+</div>
+<button class="p-2 rounded-xl text-outline hover:text-on-surface hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">filter_list</span>
+</button>
+</div>
+<!-- Matrix Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-data-table text-data-table">
+<thead>
+<tr class="text-outline font-label-md text-label-md uppercase tracking-wider">
+<th class="pb-space-sm font-semibold">Danh mục</th>
+<th class="pb-space-sm font-semibold text-right">Tổng chi</th>
+<th class="pb-space-sm font-semibold text-right">Tỷ trọng</th>
+<th class="pb-space-sm font-semibold text-right">Biến động MoM</th>
+<th class="pb-space-sm font-semibold text-center">Đánh giá AI</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<!-- Item 1: Dining -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3">
+<div class="flex items-center gap-space-sm">
+<span class="p-2 rounded-lg bg-orange-100 text-orange-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">restaurant</span>
+</span>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Ẩm thực &amp; Ăn uống</span>
+<span class="font-body-sm text-body-sm text-outline">Nhà hàng, cafe, siêu thị</span>
+</div>
+</div>
+</td>
+<td class="py-3 text-right tabular-nums font-semibold text-on-surface">14.350.000₫</td>
+<td class="py-3 text-right tabular-nums text-on-surface">35%</td>
+<td class="py-3 text-right">
+<span class="inline-flex items-center gap-0.5 text-error font-semibold tabular-nums font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> +8.4%
+                  </span>
+</td>
+<td class="py-3 text-center">
+<span class="px-space-xs py-0.5 bg-error-container text-on-error-container rounded-full font-label-sm text-label-sm">Cần kiểm soát</span>
+</td>
+</tr>
+<!-- Item 2: Shopping -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3">
+<div class="flex items-center gap-space-sm">
+<span class="p-2 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+</span>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Mua sắm &amp; Tiêu dùng</span>
+<span class="font-body-sm text-body-sm text-outline">Công nghệ, trang phục</span>
+</div>
+</div>
+</td>
+<td class="py-3 text-right tabular-nums font-semibold text-on-surface">10.250.000₫</td>
+<td class="py-3 text-right tabular-nums text-on-surface">25%</td>
+<td class="py-3 text-right">
+<span class="inline-flex items-center gap-0.5 text-primary font-semibold tabular-nums font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span> -12.1%
+                  </span>
+</td>
+<td class="py-3 text-center">
+<span class="px-space-xs py-0.5 bg-primary-fixed text-on-primary-fixed-variant rounded-full font-label-sm text-label-sm font-semibold">Tối ưu tốt</span>
+</td>
+</tr>
+<!-- Item 3: Transport -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3">
+<div class="flex items-center gap-space-sm">
+<span class="p-2 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">directions_car</span>
+</span>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Đi lại &amp; Xăng xe</span>
+<span class="font-body-sm text-body-sm text-outline">Taxi, bảo dưỡng, trạm sạc</span>
+</div>
+</div>
+</td>
+<td class="py-3 text-right tabular-nums font-semibold text-on-surface">6.150.000₫</td>
+<td class="py-3 text-right tabular-nums text-on-surface">15%</td>
+<td class="py-3 text-right">
+<span class="inline-flex items-center gap-0.5 text-outline font-semibold tabular-nums font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">remove</span> 0.0%
+                  </span>
+</td>
+<td class="py-3 text-center">
+<span class="px-space-xs py-0.5 bg-surface-container text-on-surface-variant rounded-full font-label-sm text-label-sm">Đúng hạn mức</span>
+</td>
+</tr>
+<!-- Item 4: Housing & Bills -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3">
+<div class="flex items-center gap-space-sm">
+<span class="p-2 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">home</span>
+</span>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Nhà ở &amp; Tiện ích</span>
+<span class="font-body-sm text-body-sm text-outline">Điện, nước, internet, phí dịch vụ</span>
+</div>
+</div>
+</td>
+<td class="py-3 text-right tabular-nums font-semibold text-on-surface">4.920.000₫</td>
+<td class="py-3 text-right tabular-nums text-on-surface">12%</td>
+<td class="py-3 text-right">
+<span class="inline-flex items-center gap-0.5 text-primary font-semibold tabular-nums font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span> -3.2%
+                  </span>
+</td>
+<td class="py-3 text-center">
+<span class="px-space-xs py-0.5 bg-primary-fixed text-on-primary-fixed-variant rounded-full font-label-sm text-label-sm font-semibold">Ổn định</span>
+</td>
+</tr>
+<!-- Item 5: Others -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3">
+<div class="flex items-center gap-space-sm">
+<span class="p-2 rounded-lg bg-surface-container text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">more_horiz</span>
+</span>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Khác &amp; Dự phòng</span>
+<span class="font-body-sm text-body-sm text-outline">Đăng ký thành viên, quà tặng</span>
+</div>
+</div>
+</td>
+<td class="py-3 text-right tabular-nums font-semibold text-on-surface">5.330.000₫</td>
+<td class="py-3 text-right tabular-nums text-on-surface">13%</td>
+<td class="py-3 text-right">
+<span class="inline-flex items-center gap-0.5 text-error font-semibold tabular-nums font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> +4.5%
+                  </span>
+</td>
+<td class="py-3 text-center">
+<span class="px-space-xs py-0.5 bg-surface-container text-on-surface-variant rounded-full font-label-sm text-label-sm">Bình thường</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Category summary bar -->
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-outline font-body-sm text-body-sm">
+<span>Tổng chi phí ghi nhận tháng 11: <strong class="text-on-surface font-semibold">41.000.000₫</strong></span>
+<button class="text-primary font-semibold hover:underline flex items-center gap-1 font-label-md text-label-md" type="button">
+          Xem sổ giao dịch chi tiết <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- SECTION D: Budget Adherence & Day-of-week Risk Matrix (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Discipline Matrix Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Kỷ luật tuân thủ ngân sách</h3>
+<span class="font-body-sm text-body-sm text-outline">Độ sai lệch so với kế hoạch năm</span>
+</div>
+<span class="px-space-xs py-1 rounded-lg bg-primary-fixed text-on-primary-fixed-variant font-label-md text-label-md font-bold">
+            92% Tuân thủ
+          </span>
+</div>
+<!-- 12-Month Discipline Heatmap Matrix -->
+<div class="my-space-sm">
+<div class="grid grid-cols-6 sm:grid-cols-12 gap-1.5 my-2">
+<!-- T1 to T12 squares -->
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-outline">T1</span>
+<div class="w-full h-8 rounded bg-primary-container" title="Tuân thủ 95%"></div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-outline">T2</span>
+<div class="w-full h-8 rounded bg-primary-container" title="Tuân thủ 90%"></div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-outline">T3</span>
+<div class="w-full h-8 rounded bg-tertiary-container" title="Vượt nhẹ 104%"></div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-outline">T4</span>
+<div class="w-full h-8 rounded bg-primary-container" title="Tuân thủ 98%"></div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-outline">T5</span>
+<div class="w-full h-8 rounded bg-primary-container" title="Tuân thủ 92%"></div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-outline">T6</span>
+<div class="w-full h-8 rounded bg-error-container" title="Vượt ngân sách du lịch 115%"></div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-outline">T7</span>
+<div class="w-full h-8 rounded bg-primary-container" title="Tuân thủ 94%"></div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-outline">T8</span>
+<div class="w-full h-8 rounded bg-primary-container" title="Tuân thủ 96%"></div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-outline">T9</span>
+<div class="w-full h-8 rounded bg-primary-container" title="Tuân thủ 93%"></div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-outline">T10</span>
+<div class="w-full h-8 rounded bg-primary-container" title="Tuân thủ 97%"></div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-primary font-bold">T11</span>
+<div class="w-full h-8 rounded bg-primary" title="Hiện tại: Tối ưu cao 89%"></div>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-sm text-label-sm text-outline">T12</span>
+<div class="w-full h-8 rounded bg-surface-container" title="Kỳ dự kiến"></div>
+</div>
+</div>
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm mt-2">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded bg-primary"></span> Rất kỷ luật</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded bg-tertiary-container"></span> Vượt nhẹ (&lt;5%)</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded bg-error-container"></span> Vượt định mức</span>
+</div>
+</div>
+</div>
+<!-- Day-of-week Risk Analysis Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Hành vi chi tiêu theo tuần</h3>
+<span class="font-body-sm text-body-sm text-outline">Phân bổ dòng tiền theo ngày</span>
+</div>
+<span class="material-symbols-outlined text-outline">calendar_view_week</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low my-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">Cảnh báo rủi ro cuối tuần</span>
+<span class="font-headline-sm text-headline-sm text-error font-semibold mt-0.5">Cao gấp 1.8 lần</span>
+</div>
+<span class="p-2 rounded-xl bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-[22px]">notification_important</span>
+</span>
+</div>
+<!-- Weekly Distribution Mini Bars -->
+<div class="grid grid-cols-7 gap-1 items-end h-20 pt-2">
+<div class="flex flex-col items-center gap-1">
+<div class="w-full bg-surface-variant rounded-t h-8"></div>
+<span class="font-label-sm text-label-sm text-outline">T2</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-full bg-surface-variant rounded-t h-10"></div>
+<span class="font-label-sm text-label-sm text-outline">T3</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-full bg-surface-variant rounded-t h-9"></div>
+<span class="font-label-sm text-label-sm text-outline">T4</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-full bg-surface-variant rounded-t h-12"></div>
+<span class="font-label-sm text-label-sm text-outline">T5</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-full bg-surface-variant rounded-t h-14"></div>
+<span class="font-label-sm text-label-sm text-outline">T6</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-full bg-error rounded-t h-20"></div>
+<span class="font-label-sm text-label-sm text-error font-bold">T7</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="w-full bg-error rounded-t h-18"></div>
+<span class="font-label-sm text-label-sm text-error font-bold">CN</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-space-sm">
+          72% chi phí giải trí và ẩm thực tập trung từ tối Thứ Sáu đến Chủ Nhật.
+        </p>
+</div>
+</div>
+</div>
+<!-- SECTION E: Executive Summary & AI Action Recommendations -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md flex flex-col gap-space-lg relative overflow-hidden">
+<!-- Subtle Gradient Accent Layer -->
+<div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-tertiary-fixed/40 via-primary-fixed/20 to-transparent rounded-full blur-3xl pointer-events-none -mr-20 -mt-20"></div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm relative z-10">
+<div class="flex items-center gap-space-sm">
+<div class="p-2.5 rounded-xl bg-tertiary text-on-tertiary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[24px]">auto_awesome</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface">Khuyến nghị điều hành từ FinSight AI</h2>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold uppercase">Executive AI</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Kế hoạch hành động cụ thể để gia tăng tài sản ròng và tối ưu dòng tiền Tháng 12/2024</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline">Độ tin cậy mô hình:</span>
+<span class="font-label-md text-label-md text-primary font-bold">96.8%</span>
+</div>
+</div>
+<!-- 3 Core Action Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md relative z-10">
+<!-- Action 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-space-xs py-0.5 rounded-md bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-bold">Hành động #1</span>
+<span class="material-symbols-outlined text-primary">trending_up</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Tối ưu lãi suất số dư nhàn rỗi</h4>
+<p class="font-body-sm text-body-sm text-outline">
+            Chuyển ngay <strong>45.000.000₫</strong> từ tài khoản vãng lai sang quỹ sinh lời tự động 5.8%/năm để tránh lãng phí chi phí cơ hội cuối năm.
+          </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-md text-label-md text-primary font-semibold tabular-nums">+215.000₫/tháng</span>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-on-primary-container transition-colors shadow-sm" type="button">
+            Thực hiện ngay
+          </button>
+</div>
+</div>
+<!-- Action 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-space-xs py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold">Hành động #2</span>
+<span class="material-symbols-outlined text-secondary">tune</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Cài đặt trần chi tiêu cuối tuần</h4>
+<p class="font-body-sm text-body-sm text-outline">
+            Thiết lập khóa hạn mức thẻ phụ hoặc ví điện tử mức tối đa <strong>2.500.000₫/ngày</strong> vào thứ 7 và CN để ngăn chặn chi tiêu bốc đồng dịp lễ hội.
+          </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-md text-label-md text-secondary font-semibold tabular-nums">Tiết kiệm ~3.200.000₫</span>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-on-surface hover:text-secondary font-label-md text-label-md transition-colors shadow-sm" type="button">
+            Cài đặt trần
+          </button>
+</div>
+</div>
+<!-- Action 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-space-xs py-0.5 rounded-md bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-bold">Hành động #3</span>
+<span class="material-symbols-outlined text-tertiary">lock_reset</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Tái cân bằng danh mục tài sản</h4>
+<p class="font-body-sm text-body-sm text-outline">
+            Thời điểm chốt lời một phần danh mục cổ phiếu đạt đỉnh ngắn hạn (+18.2%) để phân bổ trở lại quỹ phòng thủ an toàn đón Tết Nguyên Đán.
+          </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-label-md text-label-md text-tertiary font-semibold tabular-nums">Bảo toàn lợi nhuận</span>
+<button class="px-space-md py-1.5 rounded-lg bg-tertiary text-on-tertiary font-label-md text-label-md hover:bg-on-tertiary-container transition-colors shadow-sm" type="button">
+            Xem phân bổ
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

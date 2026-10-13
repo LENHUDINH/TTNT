@@ -1,0 +1,22 @@
+debug: false
+logging:
+  level:
+    root: WARN
+spring:
+  mail:
+    host: ''
+  datasource:
+    url: jdbc:h2:mem:finsight;MODE=MySQL;DB_CLOSE_DELAY=-1;DATABASE_TO_LOWER=TRUE;NON_KEYWORDS=MONTH
+    username: sa
+    password: ''
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+finsight:
+  ai-url: http://127.0.0.1:1
+  ai-key: test-key
+  frontend-origin: http://127.0.0.1:5173
+  demo-enabled: false
+  reset-token-log: false

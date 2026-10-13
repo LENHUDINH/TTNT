@@ -1,0 +1,177 @@
+{
+  "name": "projects/10184604479617457512",
+  "title": "FinSight AI Fintech Platform",
+  "verifiedAt": "2026-10-10",
+  "designTheme": {
+    "bodyFont": "BE_VIETNAM_PRO",
+    "bodyFontFamily": "Be Vietnam Pro",
+    "colorMode": "LIGHT",
+    "colorVariant": "FIDELITY",
+    "customColor": "#10b981",
+    "designMd": "---\nname: Intelligent Wealth Architecture\ncolors:\n  surface: '#faf8ff'\n  surface-dim: '#d2d9f4'\n  surface-bright: '#faf8ff'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f2f3ff'\n  surface-container: '#eaedff'\n  surface-container-high: '#e2e7ff'\n  surface-container-highest: '#dae2fd'\n  on-surface: '#131b2e'\n  on-surface-variant: '#3c4a42'\n  inverse-surface: '#283044'\n  inverse-on-surface: '#eef0ff'\n  outline: '#6c7a71'\n  outline-variant: '#bbcabf'\n  surface-tint: '#006c49'\n  primary: '#006c49'\n  on-primary: '#ffffff'\n  primary-container: '#10b981'\n  on-primary-container: '#00422b'\n  inverse-primary: '#4edea3'\n  secondary: '#00687a'\n  on-secondary: '#ffffff'\n  secondary-container: '#57dffe'\n  on-secondary-container: '#006172'\n  tertiary: '#494bd6'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#9699ff'\n  on-tertiary-container: '#1d17b2'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#6ffbbe'\n  primary-fixed-dim: '#4edea3'\n  on-primary-fixed: '#002113'\n  on-primary-fixed-variant: '#005236'\n  secondary-fixed: '#acedff'\n  secondary-fixed-dim: '#4cd7f6'\n  on-secondary-fixed: '#001f26'\n  on-secondary-fixed-variant: '#004e5c'\n  tertiary-fixed: '#e1e0ff'\n  tertiary-fixed-dim: '#c0c1ff'\n  on-tertiary-fixed: '#07006c'\n  on-tertiary-fixed-variant: '#2f2ebe'\n  background: '#faf8ff'\n  on-background: '#131b2e'\n  surface-variant: '#dae2fd'\ntypography:\n  display-lg:\n    fontFamily: Be Vietnam Pro\n    fontSize: 40px\n    fontWeight: '700'\n    lineHeight: 48px\n    letterSpacing: -0.02em\n  display-lg-mobile:\n    fontFamily: Be Vietnam Pro\n    fontSize: 30px\n    fontWeight: '700'\n    lineHeight: 38px\n    letterSpacing: -0.02em\n  headline-lg:\n    fontFamily: Be Vietnam Pro\n    fontSize: 28px\n    fontWeight: '600'\n    lineHeight: 36px\n    letterSpacing: -0.015em\n  headline-md:\n    fontFamily: Be Vietnam Pro\n    fontSize: 22px\n    fontWeight: '600'\n    lineHeight: 30px\n    letterSpacing: -0.01em\n  headline-sm:\n    fontFamily: Be Vietnam Pro\n    fontSize: 18px\n    fontWeight: '600'\n    lineHeight: 26px\n    letterSpacing: 0em\n  body-lg:\n    fontFamily: Be Vietnam Pro\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 24px\n    letterSpacing: 0em\n  body-md:\n    fontFamily: Be Vietnam Pro\n    fontSize: 14px\n    fontWeight: '400'\n    lineHeight: 20px\n    letterSpacing: 0em\n  body-sm:\n    fontFamily: Be Vietnam Pro\n    fontSize: 12px\n    fontWeight: '400'\n    lineHeight: 18px\n    letterSpacing: 0.01em\n  data-metric-lg:\n    fontFamily: Be Vietnam Pro\n    fontSize: 32px\n    fontWeight: '700'\n    lineHeight: 40px\n    letterSpacing: -0.02em\n  data-metric-md:\n    fontFamily: Be Vietnam Pro\n    fontSize: 20px\n    fontWeight: '600'\n    lineHeight: 28px\n    letterSpacing: -0.01em\n  data-table:\n    fontFamily: Be Vietnam Pro\n    fontSize: 14px\n    fontWeight: '500'\n    lineHeight: 20px\n    letterSpacing: 0em\n  label-md:\n    fontFamily: Be Vietnam Pro\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: 16px\n    letterSpacing: 0.04em\n  label-sm:\n    fontFamily: Be Vietnam Pro\n    fontSize: 11px\n    fontWeight: '500'\n    lineHeight: 14px\n    letterSpacing: 0.02em\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  gutter: 1.5rem\n  gutter-mobile: 1rem\n  margin: 2rem\n  margin-mobile: 1rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 1rem\n  space-lg: 1.5rem\n  space-xl: 2rem\n---\n\n## Brand & Style\n\nThiết kế định vị trải nghiệm quản lý tài sản số thế hệ mới: Chuẩn mực, minh bạch, chuyên sâu và thông minh. Giao diện kết hợp tính tin cậy của dịch vụ ngân hàng cao cấp (Private Wealth Management) với sự linh hoạt, tiên tiến của nền tảng phân tích dữ liệu AI (Intelligent SaaS Analytics).\n\n### Bản sắc thương hiệu & Trải nghiệm cảm xúc\n- **Thẩm mỹ:** Tối giản hiện đại (Modern Minimalism) kết hợp chiều sâu công nghệ (Subtle Glassmorphism & Tonal Layering). Tránh mọi yếu tố rườm rà; mỗi chi tiết thị giác đều phục vụ mục đích đọc hiểu số liệu và kích hoạt hành vi tài chính sáng suốt.\n- **Tâm lý cảm xúc:** Mang lại cảm giác kiểm soát hoàn toàn dòng tiền, bình tĩnh, an tâm bảo mật và được hỗ trợ thông minh thông qua các dự báo của AI.\n- **Đối tượng người dùng:** Chuyên gia, người có thu nhập cao và cá nhân am hiểu công nghệ cần một hệ sinh thái tự động hóa quản lý thu chi, đầu tư và lập kế hoạch ngân sách dài hạn.\n\n## Colors\n\nBảng màu được tính toán theo tỉ lệ phân bổ 60-30-10 nhằm bảo đảm độ tập trung tối đa cho dữ liệu phân tích và các gợi ý tài chính quan trọng.\n\n### Cấu trúc bảng màu\n- **Primary (`#10B981` / Emerald Green):** Tượng trưng cho sự thịnh vượng, tăng trưởng tài sản và trạng thái tài chính lành mạnh. Dùng cho các hành động chính (Primary CTAs), chỉ số dòng tiền dương, số dư khả dụng và tiến độ tiết kiệm.\n- **Secondary (`#06B6D4` / Cyan):** Đại diện cho luồng dữ liệu, sự lưu thông và tính minh bạch. Sử dụng cho biểu đồ dự báo xu hướng, thanh khoản và tương tác lọc số liệu.\n- **Tertiary (`#6366F1` / Indigo AI Accent):** Điểm nhấn độc quyền của trí tuệ nhân tạo. Áp dụng cho các đề xuất tự động từ AI (Smart Insights), huy hiệu nhận diện gợi ý tối ưu và đường xu hướng máy học.\n- **Neutral (`#0F172A` / Deep Navy) & Tonal Surfaces:**\n  - *Light Mode:* Nền chính `#F8FAFC`, bề mặt thẻ `#FFFFFF`, đường viền cấu trúc `#E2E8F0`, văn bản phân cấp `#0F172A` (tiêu đề) và `#64748B` (phụ đề).\n  - *Dark Mode:* Nền chính `#0B1120`, bề mặt thẻ `#151E30`, nền nổi `#1E293B`, đường viền kỹ thuật `#334155`.\n- **Hệ thống cảnh báo ngữ nghĩa (Semantic Roles):**\n  - Thành công (Success): `#22C55E`\n  - Cảnh báo chi tiêu (Warning): `#F59E0B`\n  - Vượt ngân sách / Dòng tiền âm (Danger): `#EF4444`\n  - Thông tin hệ thống (Info): `#3B82F6`\n\n## Typography\n\nHệ thống sử dụng phông chữ **Be Vietnam Pro** với khả năng hỗ trợ dấu thanh tiếng Việt tối ưu, không lỗi ngắt dòng và độ mở hình học cân xứng cao.\n\n### Quy tắc số liệu tài chính & Bản địa hóa\n- **Tính năng phông chữ bắt buộc:** Toàn bộ giá trị tài chính, khối lượng giao dịch và bảng biểu phải kích hoạt thuộc tính `font-variant-numeric: tabular-nums;` (hoặc `font-feature-settings: \"tnum\"`). Điều này giúp các chữ số có độ rộng đồng nhất, sắp xếp thẳng hàng dọc trên bảng kê giao dịch.\n- **Quy chuẩn định dạng số tiền Việt Nam (VND):**\n  - Dấu chấm (`.`) dùng cho phân cách hàng nghìn (Ví dụ: `12.850.000 ₫`).\n  - Ký hiệu tiền tệ `₫` đặt cách số tiền một khoảng trắng mỏng (`&thinsp;` hoặc 1 khoảng trống chuẩn).\n  - Tỷ lệ phần trăm và biến động tài chính luôn đi kèm ký hiệu dấu rõ ràng: `+14,2%` (xanh ngọc) hoặc `-3,8%` (đỏ).\n\n## Layout & Spacing\n\nThiết kế xây dựng trên nguyên tắc nhịp điệu **8-point Grid** linh hoạt, đảm bảo bố cục trực quan cho bảng dữ liệu dày đặc của dashboard tài chính.\n\n### Hệ thống lưới & Thích ứng đa thiết bị\n- **Desktop (>= 1280px):** Lưới 12 cột linh hoạt (`gutter: 1.5rem`, lề ngoài `margin: 2rem`). Cấu trúc gồm thanh điều hướng cố định bên trái (Sidebar Navigation 260px) và bảng điều khiển trung tâm tự co giãn.\n- **Tablet (768px - 1279px):** Lưới 8 cột (`gutter: 1rem`, lề ngoài `margin: 1.5rem`). Thanh điều hướng thu gọn dạng icon bar (72px), biểu đồ luồng tiền chuyển sang hiển thị ưu tiên chiều dọc.\n- **Mobile (< 768px):** Lưới 4 cột đơn (`gutter: 1rem`, lề ngoài `margin: 1rem`). Menu đáy (Bottom Tab Navigation) với các thẻ tổng quan thu nhỏ và bảng dòng thời gian vuốt ngang.\n- **Nhịp khoảng cách (Spacing Rhythm):** Các thẻ thống kê (Metric Cards) sử dụng padding nội bộ chuẩn `space-lg` (24px) trên desktop và `space-md` (16px) trên thiết bị di động để tối đa hóa diện tích biểu diễn biểu đồ.\n\n## Elevation & Depth\n\nHệ thống xây dựng chiều sâu thị giác đa tầng kết hợp giữa đường viền mờ cao cấp (Subtle Borders) và hiệu ứng gương kính tinh giản (Soft Glassmorphism), loại bỏ bóng đổ nặng nề để giao diện giữ nguyên vẻ tinh tế của công nghệ cao.\n\n### Các tầng hiển thị (Elevation Hierarchy)\n- **Tầng 0 (Background Canvas):** Nền cơ bản không bóng đổ (`#F8FAFC` ở chế độ sáng, `#0B1120` ở chế độ tối).\n- **Tầng 1 (Surface Containers - Cards & Sections):**\n  - *Light Mode:* Nền trắng tuyệt đối `#FFFFFF`, đường viền `1px solid rgba(226, 232, 240, 0.8)`, đổ bóng mềm `0 1px 3px rgba(15, 23, 42, 0.04), 0 6px 16px rgba(15, 23, 42, 0.02)`.\n  - *Dark Mode:* Nền `#151E30`, viền `1px solid rgba(255, 255, 255, 0.06)`, bóng `0 8px 24px rgba(0, 0, 0, 0.35)`.\n- **Tầng 2 (Interactive & AI Focus Cards):**\n  - Thẻ thông tin do AI kích hoạt sử dụng viền phát sáng nhẹ: `1px solid rgba(99, 102, 241, 0.3)` kết hợp hiệu ứng đổ bóng tán sắc `0 8px 20px -4px rgba(99, 102, 241, 0.12)`.\n- **Tầng 3 (Floating Overlays, Dropdowns & Modals):**\n  - Lớp kính mờ đục: `backdrop-filter: blur(16px)`, bề mặt `rgba(255, 255, 255, 0.85)` (Light) hoặc `rgba(21, 30, 48, 0.85)` (Dark), bóng đa tầng sâu `0 20px 40px -8px rgba(15, 23, 42, 0.12)`.\n\n## Shapes\n\nNgôn ngữ hình khối được chuẩn hóa ở cấp độ bo tròn tinh tế, tạo sự chuyển tiếp êm ái giữa các khối dữ liệu mà không làm giảm tính chuyên nghiệp của nền tảng tài chính.\n\n### Ứng dụng hình học\n- **Thẻ dữ liệu và Bảng điều khiển (Cards & Panels):** Sử dụng chuẩn bo góc **16px** (`rounded-lg` trong hệ thống biến thể) nhằm tạo cảm giác hiện đại, thanh lịch và an toàn cho người dùng khi tiếp cận lượng lớn dữ liệu.\n- **Nút bấm, Ô nhập liệu & Dropdown:** Sử dụng bán kính **10px - 12px** để bảo đảm sự cân xứng với tỷ lệ chiều cao 40px - 44px của thành phần.\n- **Huy hiệu dữ liệu & AI Insight Chips:** Sử dụng bo góc cong toàn phần (Pill shape - `9999px`) giúp phân biệt rõ ràng giữa nhãn danh mục và nút hành động.\n\n## Components\n\n### 1. Nút bấm (Buttons)\n- **Primary Action (Emerald Green):** Nền `#10B981`, chữ trắng, bo góc 12px, chiều cao tối thiểu 44px trên desktop. Trạng thái hover chuyển sang `#059669` với bước đổ bóng nhẹ `0 4px 12px rgba(16, 185, 129, 0.25)`.\n- **AI Action Button (Indigo Accent):** Dành riêng cho các hành động phân tích bằng trí tuệ nhân tạo (ví dụ: \"Tối ưu hóa ngân sách\", \"Dự báo dòng tiền\"). Nền chuyển sắc `linear-gradient(135deg, #6366F1 0%, #4F46E5 100%)` cùng viền siêu mảnh `rgba(255, 255, 255, 0.2)`.\n- **Secondary / Outlined:** Nền trong suốt, viền `1px solid #CBD5E1`, màu chữ `#0F172A`.\n\n### 2. Thẻ dữ liệu & Gợi ý AI (Cards & AI Insight Blocks)\n- **Metric Card:** Hiển thị số dư, doanh thu, dòng tiền khả dụng. Bao gồm nhãn phân loại kích thước nhỏ phía trên, số dư nổi bật bên dưới (kích hoạt `tabular-nums`), biểu đồ mini (sparkline) và tỷ lệ tăng giảm so với kỳ trước.\n- **AI Recommendation Box:** Thẻ có dải màu gradient viền mảnh (`#6366F1` sang `#06B6D4`), biểu tượng lấp lánh (sparkle icon), nút đóng nhanh và hành động áp dụng trực tiếp giải pháp đề xuất.\n\n### 3. Trường nhập liệu & Tìm kiếm giao dịch (Input Fields)\n- Chiều cao chuẩn 44px, nền `#FFFFFF` (Light) hoặc `#0F172A` (Dark), viền `#E2E8F0`. \n- Khi focus: Viền đổi sang `#10B981` đi kèm quầng sáng `box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15)`.\n- Bộ lọc ngày tháng và khoản tiền có tính năng định dạng tự động thêm ký hiệu phân cách phần nghìn ngay khi gõ.\n\n### 4. Danh sách giao dịch (Transaction Lists)\n- Dạng hàng (table row hoặc structured list item), chiều cao hàng tối thiểu 56px để ngón tay dễ tương tác.\n- Cột bên trái: Biểu tượng danh mục hình tròn (ẩm thực, hóa đơn, lương) được bo mềm.\n- Cột giữa: Tên đơn vị chấp nhận thanh toán (Merchant), nhãn tự động gắn bởi AI và thời gian giao dịch.\n- Cột bên phải: Số tiền định dạng `+ 2.500.000 ₫` hoặc `- 185.000 ₫`, chữ in đậm với màu sắc ngữ nghĩa rõ ràng.\n\n### 5. Huy hiệu trạng thái & Bộ lọc danh mục (Chips & Badges)\n- Huy hiệu trạng thái: Nhỏ gọn, nền trong suốt 10% kết hợp màu chữ ngữ nghĩa tương ứng (ví dụ: \"Đã khớp lệnh\" - nền `#DCFCE7`, chữ `#15803D`).\n- Chip bộ lọc AI: Dạng viên thuốc mềm mại (pill), cho phép bật/tắt nhanh các góc nhìn chi tiêu như \"Chi tiêu bất thường\", \"Khoản định kỳ\" hoặc \"Gợi ý cắt giảm\".",
+    "font": "BE_VIETNAM_PRO",
+    "headlineFont": "BE_VIETNAM_PRO",
+    "headlineFontFamily": "Be Vietnam Pro",
+    "labelFont": "BE_VIETNAM_PRO",
+    "labelFontFamily": "Be Vietnam Pro",
+    "namedColors": {
+      "background": "#faf8ff",
+      "error": "#ba1a1a",
+      "error_container": "#ffdad6",
+      "inverse_on_surface": "#eef0ff",
+      "inverse_primary": "#4edea3",
+      "inverse_surface": "#283044",
+      "on_background": "#131b2e",
+      "on_error": "#ffffff",
+      "on_error_container": "#93000a",
+      "on_primary": "#ffffff",
+      "on_primary_container": "#00422b",
+      "on_primary_fixed": "#002113",
+      "on_primary_fixed_variant": "#005236",
+      "on_secondary": "#ffffff",
+      "on_secondary_container": "#006172",
+      "on_secondary_fixed": "#001f26",
+      "on_secondary_fixed_variant": "#004e5c",
+      "on_surface": "#131b2e",
+      "on_surface_variant": "#3c4a42",
+      "on_tertiary": "#ffffff",
+      "on_tertiary_container": "#1d17b2",
+      "on_tertiary_fixed": "#07006c",
+      "on_tertiary_fixed_variant": "#2f2ebe",
+      "outline": "#6c7a71",
+      "outline_variant": "#bbcabf",
+      "primary": "#006c49",
+      "primary_container": "#10b981",
+      "primary_fixed": "#6ffbbe",
+      "primary_fixed_dim": "#4edea3",
+      "secondary": "#00687a",
+      "secondary_container": "#57dffe",
+      "secondary_fixed": "#acedff",
+      "secondary_fixed_dim": "#4cd7f6",
+      "surface": "#faf8ff",
+      "surface_bright": "#faf8ff",
+      "surface_container": "#eaedff",
+      "surface_container_high": "#e2e7ff",
+      "surface_container_highest": "#dae2fd",
+      "surface_container_low": "#f2f3ff",
+      "surface_container_lowest": "#ffffff",
+      "surface_dim": "#d2d9f4",
+      "surface_tint": "#006c49",
+      "surface_variant": "#dae2fd",
+      "tertiary": "#494bd6",
+      "tertiary_container": "#9699ff",
+      "tertiary_fixed": "#e1e0ff",
+      "tertiary_fixed_dim": "#c0c1ff"
+    },
+    "overrideNeutralColor": "#0f172a",
+    "overridePrimaryColor": "#10b981",
+    "overrideSecondaryColor": "#06b6d4",
+    "overrideTertiaryColor": "#6366f1",
+    "roundness": "ROUND_EIGHT",
+    "spacing": {
+      "gutter": "1.5rem",
+      "gutter-mobile": "1rem",
+      "margin": "2rem",
+      "margin-mobile": "1rem",
+      "space-lg": "1.5rem",
+      "space-md": "1rem",
+      "space-sm": "0.5rem",
+      "space-xl": "2rem",
+      "space-xs": "0.25rem"
+    },
+    "spacingScale": 2,
+    "typography": {
+      "body-lg": {
+        "fontFamily": "Be Vietnam Pro",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "letterSpacing": "0em",
+        "lineHeight": "24px"
+      },
+      "body-md": {
+        "fontFamily": "Be Vietnam Pro",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "letterSpacing": "0em",
+        "lineHeight": "20px"
+      },
+      "body-sm": {
+        "fontFamily": "Be Vietnam Pro",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "letterSpacing": "0.01em",
+        "lineHeight": "18px"
+      },
+      "data-metric-lg": {
+        "fontFamily": "Be Vietnam Pro",
+        "fontSize": "32px",
+        "fontWeight": "700",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "40px"
+      },
+      "data-metric-md": {
+        "fontFamily": "Be Vietnam Pro",
+        "fontSize": "20px",
+        "fontWeight": "600",
+        "letterSpacing": "-0.01em",
+        "lineHeight": "28px"
+      },
+      "data-table": {
+        "fontFamily": "Be Vietnam Pro",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "letterSpacing": "0em",
+        "lineHeight": "20px"
+      },
+      "display-lg": {
+        "fontFamily": "Be Vietnam Pro",
+        "fontSize": "40px",
+        "fontWeight": "700",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "48px"
+      },
+      "display-lg-mobile": {
+        "fontFamily": "Be Vietnam Pro",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "38px"
+      },
+      "headline-lg": {
+        "fontFamily": "Be Vietnam Pro",
+        "fontSize": "28px",
+        "fontWeight": "600",
+        "letterSpacing": "-0.015em",
+        "lineHeight": "36px"
+      },
+      "headline-md": {
+        "fontFamily": "Be Vietnam Pro",
+        "fontSize": "22px",
+        "fontWeight": "600",
+        "letterSpacing": "-0.01em",
+        "lineHeight": "30px"
+      },
+      "headline-sm": {
+        "fontFamily": "Be Vietnam Pro",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "letterSpacing": "0em",
+        "lineHeight": "26px"
+      },
+      "label-md": {
+        "fontFamily": "Be Vietnam Pro",
+        "fontSize": "12px",
+        "fontWeight": "600",
+        "letterSpacing": "0.04em",
+        "lineHeight": "16px"
+      },
+      "label-sm": {
+        "fontFamily": "Be Vietnam Pro",
+        "fontSize": "11px",
+        "fontWeight": "500",
+        "letterSpacing": "0.02em",
+        "lineHeight": "14px"
+      }
+    }
+  }
+}

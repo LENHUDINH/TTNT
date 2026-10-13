@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+
+<html lang="vi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#eef0ff", "surface-variant": "#dae2fd", "outline": "#6c7a71", "surface-container-low": "#f2f3ff", "primary-fixed": "#6ffbbe", "secondary": "#00687a", "inverse-primary": "#4edea3", "surface-container-lowest": "#ffffff", "tertiary": "#494bd6", "on-tertiary-container": "#1d17b2", "on-tertiary-fixed": "#07006c", "surface-container-highest": "#dae2fd", "surface-container": "#eaedff", "secondary-container": "#57dffe", "primary-fixed-dim": "#4edea3", "on-primary": "#ffffff", "inverse-surface": "#283044", "on-error-container": "#93000a", "on-surface-variant": "#3c4a42", "on-primary-container": "#00422b", "surface-bright": "#faf8ff", "on-tertiary-fixed-variant": "#2f2ebe", "primary": "#006c49", "on-error": "#ffffff", "secondary-fixed": "#acedff", "on-primary-fixed-variant": "#005236", "error-container": "#ffdad6", "primary-container": "#10b981", "on-secondary-container": "#006172", "secondary-fixed-dim": "#4cd7f6", "tertiary-container": "#9699ff", "surface-dim": "#d2d9f4", "surface-tint": "#006c49", "on-secondary": "#ffffff", "on-background": "#131b2e", "outline-variant": "#bbcabf", "surface-container-high": "#e2e7ff", "on-tertiary": "#ffffff", "on-secondary-fixed-variant": "#004e5c", "on-primary-fixed": "#002113", "background": "#faf8ff", "tertiary-fixed-dim": "#c0c1ff", "tertiary-fixed": "#e1e0ff", "on-secondary-fixed": "#001f26", "error": "#ba1a1a", "on-surface": "#131b2e", "surface": "#faf8ff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "margin": "2rem", "gutter-mobile": "1rem", "space-lg": "1.5rem", "space-md": "1rem", "space-xs": "0.25rem", "space-xl": "2rem", "space-sm": "0.5rem", "margin-mobile": "1rem" }, "fontFamily": { "headline-md": ["Be Vietnam Pro"], "body-sm": ["Be Vietnam Pro"], "label-sm": ["Be Vietnam Pro"], "display-lg": ["Be Vietnam Pro"], "data-metric-lg": ["Be Vietnam Pro"], "label-md": ["Be Vietnam Pro"], "body-lg": ["Be Vietnam Pro"], "body-md": ["Be Vietnam Pro"], "headline-lg": ["Be Vietnam Pro"], "data-metric-md": ["Be Vietnam Pro"], "data-table": ["Be Vietnam Pro"], "display-lg-mobile": ["Be Vietnam Pro"], "headline-sm": ["Be Vietnam Pro"] }, "fontSize": { "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "data-metric-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "data-metric-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "data-table": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "500" }], "display-lg-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-lg flex items-center gap-space-sm bg-surface-container-lowest"><img alt="Logo FinSight AI" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WJfB8uGwgKwCVy98ZxKmFBeVdVtnMCy5cQmIg5LH76oFiqRcx0EJuXyGz4DjNF7EgBs6QyCa6j09dhyYIdiSUmZu9z--HZtWAd7tevu0mKO5XDxlqSf_D2Pg4Qd1MeEpSw_JtaXm5aouEhJp8j1HyVwHkoU-FNXYDFO1S-u3W5Aul-xQyylVhVhJO8vD_fnUJbCQLCkaKUhnDS-q-xm9iL6yA2AahgsGtQWmQR6WNOl_e2KUw73zJCTkPZ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">FinSight AI</span><span class="font-label-sm text-label-sm text-outline tracking-wider uppercase mt-space-xs">Private Wealth</span></div></div><div class="flex-1 overflow-y-auto px-space-md py-space-sm"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold shadow-[0_2px_8px_rgba(16,185,129,0.2)]"><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="tong-quan" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-outline">grid_view</span><span class="font-body-md text-body-md">Tổng quan</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="giao-dich" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-outline">receipt_long</span><span class="font-body-md text-body-md">Giao dịch</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="vi-cua-toi" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-outline">account_balance_wallet</span><span class="font-body-md text-body-md">Ví của tôi</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-space-container-high hover:text-on-surface transition-all duration-150" data-path="ngan-sach" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-outline">pie_chart</span><span class="font-body-md text-body-md">Ngân sách</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="muc-tieu-tiet-kiem" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-outline">savings</span><span class="font-body-md text-body-md">Mục tiêu tiết kiệm</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="du-bao-ai" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-tertiary">auto_awesome</span><span class="font-body-md text-body-md">Dự báo AI</span></div><span class="px-space-xs py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase tracking-wide">AI</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="giao-dich-bat-thuong" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-error">warning</span><span class="font-body-md text-body-md">Giao dịch bất thường</span></div><span class="px-space-xs py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">Cảnh báo</span></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="bao-cao" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-outline">bar_chart</span><span class="font-body-md text-body-md">Báo cáo</span></div></a><a class="flex items-center justify-between px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all duration-150" data-path="cai-dat" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-outline">settings</span><span class="font-body-md text-body-md">Cài đặt</span></div></a></nav></div></div><div class="p-space-md bg-surface-container-low"><div class="p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_4px_rgba(0,0,0,0.03)] mb-space-sm"><div class="flex items-center justify-between mb-space-xs"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px]">verified</span><span class="font-label-md text-label-md text-on-surface font-bold">FinSight Pro</span></div><span class="font-label-sm text-label-sm text-primary font-bold">Hoạt động</span></div><div class="w-full bg-surface-container rounded-full h-1.5 mb-space-xs overflow-hidden"><div class="bg-primary-container h-1.5 rounded-full w-4/5"></div></div><div class="flex justify-between items-center text-outline"><span class="font-label-sm text-label-sm">Đồng bộ dữ liệu</span><span class="font-label-sm text-label-sm font-semibold text-on-surface-variant">82%</span></div></div><a class="flex items-center justify-center gap-space-sm w-full py-space-sm rounded-xl text-outline hover:bg-surface-container-high hover:text-error transition-all duration-150" data-path="dang-xuat" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-label-md text-label-md">Đăng xuất</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-xs text-outline font-body-sm text-body-sm"><span class="hover:text-on-surface cursor-pointer">Trang chủ</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-on-surface font-semibold">Quản lý tài sản</span></div><div class="relative flex items-center w-80 xl:w-96"><span class="material-symbols-outlined absolute left-3 text-outline text-[20px]">search</span><input class="w-full h-10 pl-10 pr-space-md bg-surface-container-low rounded-xl text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" placeholder="Tìm kiếm giao dịch, ví, báo cáo..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1.5 bg-surface-container-low rounded-xl text-on-surface-variant font-label-md text-label-md cursor-pointer hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[18px] text-outline">calendar_today</span><span>Tháng này (11/2024)</span><span class="material-symbols-outlined text-[16px] text-outline">arrow_drop_down</span></div><div class="flex items-center gap-space-xs"><button class="relative p-2 rounded-xl text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error ring-2 ring-surface-container-lowest"></span></button><button class="p-2 rounded-xl text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">light_mode</span></button></div><div class="h-8 w-px bg-surface-container-high mx-space-xs"></div><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqABBjt8nbkDCq6cVMgS7SIAghjjf2FQ_M5k_xi30z9uKtyTNeX1dxGPNFXcQLNX56e3Np9VnrMUZ0y9KA35X3W0053d8z9ffqSDLGcNNXjrRV8_azpZWYr5Whqe8rR46QZgERE6tpIFO-piKY4IC516kzPE71z-e4kjJsc757JhQ7aW9GrRmvsSfstxeYqWTZ0jQWEluyxTwOfERn8U-oNZo4pIcno9WxvgnZj7b6NPGhwvrEiinxAA"/><div class="hidden xl:flex flex-col"><span class="font-label-md text-label-md text-on-surface leading-tight">Nguyễn Minh Quân</span><span class="font-label-sm text-label-sm text-outline leading-tight">Chuyên viên cao cấp</span></div></div></div></header><main class="relative pt-16 bg-background min-h-screen px-space-lg py-space-lg w-full"><div class="flex flex-col w-full">
+<!-- Active Sidebar Nav State Synchronizer -->
+<script>
+    (function () {
+      const activePath = 'muc-tieu-tiet-kiem';
+      const navLinks = document.querySelectorAll('aside nav a');
+      navLinks.forEach((link) => {
+        const linkPath = link.getAttribute('data-path');
+        if (linkPath === activePath) {
+          link.className =
+            'flex items-center justify-between px-space-md py-space-sm rounded-xl bg-primary-container text-on-primary font-bold shadow-[0_2px_8px_rgba(16,185,129,0.2)] transition-all duration-150';
+          const icon = link.querySelector('.material-symbols-outlined');
+          if (icon) {
+            icon.className = 'material-symbols-outlined text-on-primary';
+          }
+        }
+      });
+    })();
+  </script>
+<!-- Section: Header Bar & Actions -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-xl">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md uppercase tracking-wider mb-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>FinSight Wealth Automation</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+        Mục tiêu tiết kiệm thông minh
+      </h1>
+<p class="font-body-md text-body-md text-outline mt-1 max-w-2xl">
+        Lập kế hoạch tài chính, theo dõi tích lũy tự động và hiện thực hóa mục tiêu với trợ lý phân tích dòng tiền chuyên sâu.
+      </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all duration-150 shadow-sm" onclick="toggleModal('modal-auto-save')" type="button">
+<span class="material-symbols-outlined text-secondary text-[20px]">sync_saved_locally</span>
+<span>Tự động trích tiền định kỳ</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-lg py-2.5 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md shadow-[0_4px_12px_rgba(16,185,129,0.25)] hover:shadow-none transition-all duration-150" onclick="toggleModal('modal-create-goal')" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Tạo mục tiêu mới</span>
+</button>
+</div>
+</div>
+<!-- SECTION A: Overview KPI Bento Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-xl">
+<!-- Card 1: Tổng tài sản tích lũy -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04),0_6px_16px_rgba(15,23,42,0.02)] flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-all">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 rounded-full bg-primary-container/10 pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Tổng tích lũy hiện tại</span>
+<span class="material-symbols-outlined text-primary-container text-[20px]">donut_large</span>
+</div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-data-metric-lg text-data-metric-lg text-on-surface">42.500.000</span>
+<span class="font-label-md text-label-md text-outline">₫</span>
+</div>
+<div class="flex items-center justify-between text-outline font-body-sm text-body-sm mt-1">
+<span>Kế hoạch: 80.000.000 ₫</span>
+<span class="font-bold text-primary font-label-md text-label-md">53.1%</span>
+</div>
+</div>
+<div class="mt-space-md">
+<div class="w-full bg-surface-container-high rounded-full h-2 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-700" style="width: 53.1%"></div>
+</div>
+<div class="flex justify-between items-center text-outline font-label-sm text-label-sm mt-1.5">
+<span>Còn thiếu: 37.500.000 ₫</span>
+<span class="text-primary font-medium">Bảo đảm tiến độ</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Mục tiêu đang chạy -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04),0_6px_16px_rgba(15,23,42,0.02)] flex flex-col justify-between group hover:shadow-md transition-all">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Danh mục tích lũy</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">flag</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-data-metric-lg text-data-metric-lg text-on-surface">4</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">mục tiêu đang chạy</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-1">2 ngắn hạn (&lt; 3 tháng), 2 trung hạn</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<div class="flex -space-x-2">
+<span class="w-7 h-7 rounded-full bg-primary-container/20 text-primary flex items-center justify-center font-label-sm text-label-sm font-bold shadow-sm">1</span>
+<span class="w-7 h-7 rounded-full bg-tertiary-container/40 text-on-tertiary-container flex items-center justify-center font-label-sm text-label-sm font-bold shadow-sm">2</span>
+<span class="w-7 h-7 rounded-full bg-secondary-container/40 text-on-secondary-container flex items-center justify-center font-label-sm text-label-sm font-bold shadow-sm">3</span>
+<span class="w-7 h-7 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-sm text-label-sm font-bold shadow-sm">4</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant">100% Hoạt động</span>
+</div>
+</div>
+<!-- Card 3: Dự kiến hoàn thành gần nhất -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04),0_6px_16px_rgba(15,23,42,0.02)] flex flex-col justify-between group hover:shadow-md transition-all">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Hoàn thành gần nhất</span>
+<span class="material-symbols-outlined text-primary text-[20px]">timer</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-data-metric-lg text-data-metric-lg text-primary">22</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">ngày nữa</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant font-medium mt-1 truncate">
+          Quỹ dự phòng khẩn cấp
+        </div>
+</div>
+<div class="mt-space-md flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+<span>Dự kiến kết thúc: 31/12/2024</span>
+</div>
+</div>
+<!-- Card 4: Lãi suất tích lũy ước tính -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04),0_6px_16px_rgba(15,23,42,0.02)] flex flex-col justify-between group hover:shadow-md transition-all">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Lợi nhuận thụ động</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">trending_up</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-data-metric-lg text-data-metric-lg text-tertiary font-bold">+185.000</span>
+<span class="font-label-md text-label-md text-outline">₫ / tháng</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-1">Từ các tài khoản tích lũy sinh lời liên kết</p>
+</div>
+<div class="mt-space-md flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lãi suất thực hưởng:</span>
+<span class="font-label-sm text-label-sm font-bold text-primary px-2 py-0.5 rounded-full bg-primary-fixed/30">5.8% / năm</span>
+</div>
+</div>
+</div>
+<!-- SECTION B: Main Content Bento Grid - Savings Goal Cards -->
+<div class="mb-space-xl">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface">Kế hoạch mục tiêu chi tiết</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">4 Đang theo dõi</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-1.5 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px]">sort</span>
+</button>
+</div>
+</div>
+<!-- 4 Cards Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- GOAL CARD 1: Quỹ dự phòng khẩn cấp -->
+<div class="rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04),0_6px_16px_rgba(15,23,42,0.02)] p-space-lg flex flex-col justify-between hover:shadow-lg transition-all relative overflow-hidden group">
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container/15 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">shield</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                Quỹ dự phòng khẩn cấp 6 tháng
+              </h3>
+<p class="font-body-sm text-body-sm text-outline">Tài khoản thanh khoản cao - Bảo vệ dòng tiền</p>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>Tiến độ xuất sắc - Sớm 12 ngày</span>
+</span>
+</div>
+<!-- Metrics & Progress -->
+<div class="space-y-space-sm my-space-sm">
+<div class="flex items-baseline justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-on-surface">18.000.000</span>
+<span class="text-body-sm text-outline">/ 24.000.000 ₫</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">75%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-3 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-700" style="width: 75%"></div>
+</div>
+<div class="flex items-center justify-between text-outline font-body-sm text-body-sm pt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+              Hạn chót: 31/12/2024
+            </span>
+<span class="font-medium text-on-surface-variant">Còn thiếu: <strong class="text-on-surface">6.000.000 ₫</strong></span>
+</div>
+</div>
+<!-- Card Footer -->
+<div class="pt-space-md mt-space-sm flex items-center justify-between bg-surface-container-low/50 -mx-space-lg -mb-space-lg p-space-md rounded-b-xl">
+<div class="flex items-center gap-1.5 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">auto_mode</span>
+<span>Trích tự động 1.500.000 ₫ / tuần</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-all shadow-sm" onclick="openDepositModal('Quỹ dự phòng khẩn cấp 6 tháng', '6.000.000 ₫')" type="button">
+              Nạp thêm tiền
+            </button>
+<button class="px-space-sm py-1.5 rounded-lg hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all" type="button">
+              Chi tiết
+            </button>
+</div>
+</div>
+</div>
+<!-- GOAL CARD 2: Mua MacBook Pro M3 (With AI Recommendation) -->
+<div class="rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04),0_6px_16px_rgba(15,23,42,0.02)] p-space-lg flex flex-col justify-between hover:shadow-lg transition-all relative group">
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">laptop_mac</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors">
+                Mua MacBook Pro M3
+              </h3>
+<p class="font-body-sm text-body-sm text-outline">Công cụ làm việc chuyên nghiệp</p>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold shrink-0">
+            Còn 104 ngày
+          </span>
+</div>
+<!-- Metrics & Progress -->
+<div class="space-y-space-sm my-space-sm">
+<div class="flex items-baseline justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-on-surface">15.000.000</span>
+<span class="text-body-sm text-outline">/ 35.000.000 ₫</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">42.8%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-3 overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full transition-all duration-700" style="width: 42.8%"></div>
+</div>
+<div class="flex items-center justify-between text-outline font-body-sm text-body-sm pt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+              Hạn chót: 15/03/2025
+            </span>
+<span class="font-medium text-on-surface-variant">Còn thiếu: <strong class="text-on-surface">20.000.000 ₫</strong></span>
+</div>
+</div>
+<!-- AI Recommendation Prompt Box -->
+<div class="my-space-xs p-space-sm rounded-xl bg-tertiary-fixed/30 flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px] shrink-0 mt-0.5">auto_awesome</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-snug">
+<strong class="text-tertiary font-semibold">Đề xuất AI:</strong> Trích 2.500.000 ₫ mỗi tháng vào ngày nhận lương để đạt đúng hạn cam kết.
+          </p>
+</div>
+<!-- Card Footer -->
+<div class="pt-space-md mt-space-sm flex items-center justify-between bg-surface-container-low/50 -mx-space-lg -mb-space-lg p-space-md rounded-b-xl">
+<span class="font-label-sm text-label-sm text-outline">Tài khoản VPBank Wealth</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-all shadow-sm" onclick="openDepositModal('Mua MacBook Pro M3', '20.000.000 ₫')" type="button">
+              Nạp thêm tiền
+            </button>
+<button class="px-space-sm py-1.5 rounded-lg hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all" type="button">
+              Chi tiết
+            </button>
+</div>
+</div>
+</div>
+<!-- GOAL CARD 3: Du lịch Đà Lạt cuối năm -->
+<div class="rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04),0_6px_16px_rgba(15,23,42,0.02)] p-space-lg flex flex-col justify-between hover:shadow-lg transition-all relative group">
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">flight_takeoff</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                Du lịch Đà Lạt cuối năm
+              </h3>
+<p class="font-body-sm text-body-sm text-outline">Kỳ nghỉ gắn kết gia đình</p>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold shrink-0">
+            Hạn: 25/12/2024
+          </span>
+</div>
+<!-- Metrics & Progress -->
+<div class="space-y-space-sm my-space-sm">
+<div class="flex items-baseline justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-on-surface">4.500.000</span>
+<span class="text-body-sm text-outline">/ 6.000.000 ₫</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">75%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-3 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-700" style="width: 75%"></div>
+</div>
+<div class="flex items-center justify-between text-outline font-body-sm text-body-sm pt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+              Chỉ còn 16 ngày
+            </span>
+<span class="font-medium text-on-surface-variant">Còn thiếu: <strong class="text-on-surface">1.500.000 ₫</strong></span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tiến độ tuần: <strong>+500.000 ₫</strong> từ Round-up</span>
+<span class="material-symbols-outlined text-primary text-[18px]">trending_up</span>
+</div>
+<!-- Card Footer -->
+<div class="pt-space-md mt-space-sm flex items-center justify-between bg-surface-container-low/50 -mx-space-lg -mb-space-lg p-space-md rounded-b-xl">
+<span class="font-label-sm text-label-sm text-outline">Ví điện tử phụ</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-all shadow-sm" onclick="openDepositModal('Du lịch Đà Lạt cuối năm', '1.500.000 ₫')" type="button">
+              Nạp thêm tiền
+            </button>
+<button class="px-space-sm py-1.5 rounded-lg hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all" type="button">
+              Chi tiết
+            </button>
+</div>
+</div>
+</div>
+<!-- GOAL CARD 4: Khóa học Chuyên gia AI & FinTech -->
+<div class="rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04),0_6px_16px_rgba(15,23,42,0.02)] p-space-lg flex flex-col justify-between hover:shadow-lg transition-all relative group">
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[28px]">school</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-tertiary transition-colors">
+                Khóa học Chuyên gia AI &amp; FinTech
+              </h3>
+<p class="font-body-sm text-body-sm text-outline">Nâng cao năng lực chuyên môn</p>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold shrink-0">
+            Dài hạn (2025)
+          </span>
+</div>
+<!-- Metrics & Progress -->
+<div class="space-y-space-sm my-space-sm">
+<div class="flex items-baseline justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-on-surface">5.000.000</span>
+<span class="text-body-sm text-outline">/ 15.000.000 ₫</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">33.3%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-3 overflow-hidden">
+<div class="bg-tertiary h-full rounded-full transition-all duration-700" style="width: 33.3%"></div>
+</div>
+<div class="flex items-center justify-between text-outline font-body-sm text-body-sm pt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+              Hạn chót: 30/06/2025
+            </span>
+<span class="font-medium text-on-surface-variant">Còn thiếu: <strong class="text-on-surface">10.000.000 ₫</strong></span>
+</div>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tốc độ tích lũy: <strong>1.000.000 ₫/tháng</strong></span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Đúng tiến độ</span>
+</div>
+<!-- Card Footer -->
+<div class="pt-space-md mt-space-sm flex items-center justify-between bg-surface-container-low/50 -mx-space-lg -mb-space-lg p-space-md rounded-b-xl">
+<span class="font-label-sm text-label-sm text-outline">Quỹ đầu tư bản thân</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-all shadow-sm" onclick="openDepositModal('Khóa học Chuyên gia AI &amp; FinTech', '10.000.000 ₫')" type="button">
+              Nạp thêm tiền
+            </button>
+<button class="px-space-sm py-1.5 rounded-lg hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all" type="button">
+              Chi tiết
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION C: AI Smart Auto-Save Rules & Intelligent Nudge -->
+<div class="mb-space-xl">
+<div class="flex items-center gap-space-xs mb-space-md">
+<span class="material-symbols-outlined text-tertiary text-[24px]">auto_awesome</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Kế hoạch trích quỹ thông minh của AI</h2>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase tracking-wide font-bold">Auto-Save AI</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Quy tắc 1: Round-up -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04),0_6px_16px_rgba(15,23,42,0.02)] flex flex-col justify-between relative overflow-hidden">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-container/15 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed-variant font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+              Đang kích hoạt
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">
+            Làm tròn tiền lẻ &amp; tích lũy (Round-up)
+          </h3>
+<p class="font-body-sm text-body-sm text-outline">
+            Tự động làm tròn mỗi chi tiêu lên hàng chục nghìn gần nhất và chuyển phần dư vào các mục tiêu ngắn hạn.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-surface-container-high/60 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Tháng này đã gom</span>
+<span class="font-data-metric-md text-data-metric-md text-primary font-bold">680.000 ₫</span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-colors">
+            Cấu hình
+          </button>
+</div>
+</div>
+<!-- Quy tắc 2: Salary Deduction -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04),0_6px_16px_rgba(15,23,42,0.02)] flex flex-col justify-between relative overflow-hidden">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined">account_balance</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed-variant font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+              Đang kích hoạt
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">
+            Trích 15% lương vào ngày 10 hàng tháng
+          </h3>
+<p class="font-body-sm text-body-sm text-outline">
+            Chuyển tiền tiết kiệm ngay trước khi bắt đầu chi tiêu sinh hoạt, phân bổ tự động vào Quỹ khẩn cấp và MacBook.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-surface-container-high/60 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline block">Lần chuyển tiếp theo</span>
+<span class="font-data-metric-md text-data-metric-md text-on-surface font-semibold">10/12/2024</span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md transition-colors">
+            Điều chỉnh %
+          </button>
+</div>
+</div>
+<!-- AI Smart Nudge Suggestion Banner -->
+<div class="p-space-lg rounded-xl bg-gradient-to-br from-tertiary-fixed/60 via-surface-container-low to-surface-container-lowest shadow-[0_4px_16px_rgba(99,102,241,0.08)] flex flex-col justify-between border-l-4 border-l-tertiary">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+              FinSight AI Insight
+            </span>
+<span class="font-label-sm text-label-sm text-outline">Độ chính xác 94%</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">
+            Cơ hội tối ưu hóa dòng tiền
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            “Nếu bạn giảm <strong class="text-tertiary font-bold">20% chi tiêu ăn ngoài</strong> vào cuối tuần, bạn sẽ dư thêm 1.450.000 ₫/tháng và đạt mục tiêu <strong class="text-on-surface font-bold">MacBook Pro sớm hơn 45 ngày</strong>.”
+          </p>
+</div>
+<div class="mt-space-md flex items-center gap-space-sm">
+<button class="flex-1 px-space-md py-2.5 rounded-xl bg-tertiary hover:bg-on-tertiary-container text-on-tertiary font-label-md text-label-md shadow-sm transition-all" onclick="applyAiRecommendation(this)" type="button">
+            Áp dụng khuyến nghị này
+          </button>
+<button class="p-2.5 rounded-xl bg-surface-container-lowest hover:bg-surface-container-high text-outline transition-colors" title="Bỏ qua" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION D: Recent Contributions History Table -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04),0_6px_16px_rgba(15,23,42,0.02)]">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Lịch sử nạp tích lũy gần đây</h2>
+<p class="font-body-sm text-body-sm text-outline">Nhật ký các giao dịch phân bổ tự động và nạp thủ công vào các mục tiêu</p>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<div class="relative">
+<input class="h-9 pl-8 pr-3 text-body-sm text-on-surface bg-surface-container-low rounded-lg focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="Lọc theo mục tiêu..." type="text"/>
+<span class="material-symbols-outlined text-outline text-[16px] absolute left-2.5 top-2.5">filter_list</span>
+</div>
+<button class="px-space-sm py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-label-md text-label-md flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Xuất Excel</span>
+</button>
+</div>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-data-table text-data-table">
+<thead>
+<tr class="bg-surface-container-low/60 text-outline uppercase font-label-sm text-label-sm">
+<th class="py-3 px-space-md rounded-l-lg">Thời gian</th>
+<th class="py-3 px-space-md">Mục tiêu nhận</th>
+<th class="py-3 px-space-md">Phương thức &amp; Nguồn trích</th>
+<th class="py-3 px-space-md">Loại hình</th>
+<th class="py-3 px-space-md text-right rounded-r-lg">Số tiền tích lũy</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-space-md text-outline font-body-sm text-body-sm">
+<div class="font-medium text-on-surface">Hôm nay, 09:30</div>
+<div class="text-[11px] text-outline">03/12/2024</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-semibold text-on-surface">Quỹ dự phòng khẩn cấp</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">credit_card</span>
+<span class="text-on-surface-variant">VPBank Diamond *4892</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed/40 text-on-primary-fixed-variant font-label-sm text-label-sm font-medium">
+                Tự động định kỳ
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right font-bold text-primary font-headline-sm text-headline-sm">
+              +1.500.000 ₫
+            </td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-space-md text-outline font-body-sm text-body-sm">
+<div class="font-medium text-on-surface">Hôm qua, 21:15</div>
+<div class="text-[11px] text-outline">02/12/2024</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-semibold text-on-surface">Du lịch Đà Lạt cuối năm</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">toll</span>
+<span class="text-on-surface-variant">Làm tròn chi tiêu (Round-up)</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-medium">
+                AI Round-up
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right font-bold text-primary font-headline-sm text-headline-sm">
+              +45.000 ₫
+            </td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-space-md text-outline font-body-sm text-body-sm">
+<div class="font-medium text-on-surface">28/11/2024</div>
+<div class="text-[11px] text-outline">14:02</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span class="font-semibold text-on-surface">Mua MacBook Pro M3</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">account_balance_wallet</span>
+<span class="text-on-surface-variant">Chuyển từ Ví chi tiêu chính</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-medium">
+                Nạp thủ công
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right font-bold text-primary font-headline-sm text-headline-sm">
+              +3.000.000 ₫
+            </td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-space-md text-outline font-body-sm text-body-sm">
+<div class="font-medium text-on-surface">20/11/2024</div>
+<div class="text-[11px] text-outline">10:00</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-semibold text-on-surface">Khóa học Chuyên gia AI &amp; FinTech</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-outline">credit_card</span>
+<span class="text-on-surface-variant">Techcombank Priority *1088</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed/40 text-on-primary-fixed-variant font-label-sm text-label-sm font-medium">
+                Tự động định kỳ
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right font-bold text-primary font-headline-sm text-headline-sm">
+              +1.000.000 ₫
+            </td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-3.5 px-space-md text-outline font-body-sm text-body-sm">
+<div class="font-medium text-on-surface">15/11/2024</div>
+<div class="text-[11px] text-outline">18:45</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-semibold text-on-surface">Quỹ dự phòng khẩn cấp</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">savings</span>
+<span class="text-on-surface-variant">Tiền thưởng quý Q3</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-medium">
+                Nạp thủ công
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-right font-bold text-primary font-headline-sm text-headline-sm">
+              +5.000.000 ₫
+            </td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Summary -->
+<div class="flex items-center justify-between pt-space-md mt-space-sm border-t border-surface-container-low text-body-sm text-outline">
+<span>Hiển thị 5 trên 28 giao dịch nạp gần nhất</span>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface text-label-sm font-medium disabled:opacity-40" disabled="">
+          Trước
+        </button>
+<button class="px-2.5 py-1 rounded-lg bg-primary-container text-on-primary font-bold text-label-sm">
+          1
+        </button>
+<button class="px-2.5 py-1 rounded-lg hover:bg-surface-container-low text-on-surface text-label-sm">
+          2
+        </button>
+<button class="px-2.5 py-1 rounded-lg hover:bg-surface-container-low text-on-surface text-label-sm">
+          3
+        </button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface text-label-sm font-medium">
+          Sau
+        </button>
+</div>
+</div>
+</div>
+<!-- MODAL: Nạp thêm tiền (Interactive Micro-Action) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-on-surface/40 backdrop-blur-sm hidden" id="modal-deposit">
+<div class="w-full max-w-lg rounded-xl bg-surface-container-lowest shadow-2xl p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-lg bg-primary-container/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined">add_card</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Nạp tiền vào mục tiêu</h3>
+<p class="font-body-sm text-body-sm text-outline" id="deposit-goal-title">Chọn khoản tiền muốn tích lũy ngay</p>
+</div>
+</div>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-high" onclick="toggleModal('modal-deposit')">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="space-y-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Số tiền muốn nạp (VND)</label>
+<div class="relative">
+<input class="w-full h-11 px-3 pr-10 rounded-xl bg-surface-container-low text-on-surface font-headline-sm text-headline-sm font-bold focus:outline-none focus:ring-2 focus:ring-primary-container" id="deposit-amount-input" type="text" value="1.000.000"/>
+<span class="absolute right-3 top-2.5 text-outline font-semibold">₫</span>
+</div>
+<p class="font-label-sm text-label-sm text-outline mt-1" id="deposit-gap-hint">Còn thiếu: --</p>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<button class="py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md" onclick="setDepositAmount('500000')" type="button">
+            +500.000 ₫
+          </button>
+<button class="py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md" onclick="setDepositAmount('1000000')" type="button">
+            +1.000.000 ₫
+          </button>
+<button class="py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md" onclick="setDepositAmount('2000000')" type="button">
+            +2.000.000 ₫
+          </button>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Nguồn trích tiền</label>
+<select class="w-full h-11 px-3 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container">
+<option>Ví chính FinSight (Số dư khả dụng: 18.420.000 ₫)</option>
+<option>VPBank Diamond *4892 (Số dư: 52.800.000 ₫)</option>
+<option>Techcombank Priority *1088 (Số dư: 12.350.000 ₫)</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md" onclick="toggleModal('modal-deposit')" type="button">
+          Hủy bỏ
+        </button>
+<button class="flex-1 py-2.5 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md shadow-sm" onclick="confirmDeposit()" type="button">
+          Xác nhận nạp tiền
+        </button>
+</div>
+</div>
+</div>
+<!-- MODAL: Tạo mục tiêu mới (Modal Placeholder) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-on-surface/40 backdrop-blur-sm hidden" id="modal-create-goal">
+<div class="w-full max-w-lg rounded-xl bg-surface-container-lowest shadow-2xl p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-lg bg-primary-container/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined">flag</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tạo mục tiêu tiết kiệm mới</h3>
+<p class="font-body-sm text-body-sm text-outline">FinSight AI sẽ tự động lập tiến độ tối ưu nhất</p>
+</div>
+</div>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-high" onclick="toggleModal('modal-create-goal')">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="space-y-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Tên mục tiêu</label>
+<input class="w-full h-10 px-3 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="Ví dụ: Mua ô tô điện, Du lịch Châu Âu..." type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Số tiền mục tiêu (₫)</label>
+<input class="w-full h-10 px-3 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="50.000.000" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Hạn hoàn thành</label>
+<input class="w-full h-10 px-3 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container" type="date"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Danh mục mục tiêu</label>
+<select class="w-full h-10 px-3 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container">
+<option>Quỹ dự phòng an toàn</option>
+<option>Mua sắm tài sản lớn</option>
+<option>Giáo dục &amp; Nâng cao kỹ năng</option>
+<option>Du lịch &amp; Trải nghiệm</option>
+<option>Đầu tư mạo hiểm</option>
+</select>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md" onclick="toggleModal('modal-create-goal')" type="button">
+          Hủy
+        </button>
+<button class="flex-1 py-2.5 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md shadow-sm" onclick="toggleModal('modal-create-goal'); alert('Mục tiêu mới đã được tạo thành công cùng kế hoạch phân bổ AI!');" type="button">
+          Kích hoạt mục tiêu
+        </button>
+</div>
+</div>
+</div>
+<!-- MODAL: Cấu hình trích tiền tự động (Modal Placeholder) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-on-surface/40 backdrop-blur-sm hidden" id="modal-auto-save">
+<div class="w-full max-w-lg rounded-xl bg-surface-container-lowest shadow-2xl p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-lg bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined">sync_saved_locally</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tự động trích tiền định kỳ</h3>
+<p class="font-body-sm text-body-sm text-outline">Thiết lập quy tắc kỷ luật tài chính tự động</p>
+</div>
+</div>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-high" onclick="toggleModal('modal-auto-save')">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="space-y-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">Làm tròn chi tiêu (Round-up)</span>
+<span class="font-body-sm text-body-sm text-outline">Làm tròn tới 10.000 ₫ hoặc 50.000 ₫</span>
+</div>
+<input checked="" class="w-5 h-5 accent-primary cursor-pointer" type="checkbox"/>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">Trích cố định ngày lương</span>
+<span class="font-body-sm text-body-sm text-outline">Ngày 10 hàng tháng (15% tổng thu)</span>
+</div>
+<input checked="" class="w-5 h-5 accent-primary cursor-pointer" type="checkbox"/>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">Thử thách 52 tuần tiết kiệm</span>
+<span class="font-body-sm text-body-sm text-outline">Tăng dần số tiền mỗi tuần</span>
+</div>
+<input class="w-5 h-5 accent-primary cursor-pointer" type="checkbox"/>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-2.5 rounded-xl bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md" onclick="toggleModal('modal-auto-save')" type="button">
+          Đóng
+        </button>
+<button class="flex-1 py-2.5 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md shadow-sm" onclick="toggleModal('modal-auto-save'); alert('Cấu hình trích quỹ tự động đã được lưu!');" type="button">
+          Lưu cấu hình
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript Logic -->
+<script>
+    function toggleModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.toggle('hidden');
+      }
+    }
+
+    function openDepositModal(goalName, remainingGap) {
+      document.getElementById('deposit-goal-title').innerText = 'Mục tiêu: ' + goalName;
+      document.getElementById('deposit-gap-hint').innerText = 'Còn thiếu để đạt đích: ' + remainingGap;
+      toggleModal('modal-deposit');
+    }
+
+    function setDepositAmount(val) {
+      const formatted = new Intl.NumberFormat('vi-VN').format(val);
+      document.getElementById('deposit-amount-input').value = formatted;
+    }
+
+    function confirmDeposit() {
+      const amount = document.getElementById('deposit-amount-input').value;
+      alert('Đã nạp thành công ' + amount + ' ₫ vào mục tiêu!');
+      toggleModal('modal-deposit');
+    }
+
+    function applyAiRecommendation(btn) {
+      btn.innerText = 'Đã kích hoạt tối ưu';
+      btn.classList.remove('bg-tertiary', 'hover:bg-on-tertiary-container');
+      btn.classList.add('bg-primary-container', 'text-on-primary');
+      setTimeout(() => {
+        alert('AI đã tự động phân bổ lại hạn mức chi tiêu ăn uống tuần và cập nhật đích đến MacBook Pro sớm hơn 45 ngày!');
+      }, 200);
+    }
+  </script>
+</div></main></div></body></html>

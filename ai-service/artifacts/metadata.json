@@ -1,0 +1,247 @@
+{
+  "version": "synthetic-v1-1745bd270380",
+  "seed": 20261010,
+  "dataset": "Synthetic, no personal data; 20 accounts × 365 days",
+  "datasetHash": "1745bd2703805301177751bea0dda96c01fb218a931bc094f97f58828f9dbbee",
+  "forecast": {
+    "selected": "random_forest_depth5",
+    "features": [
+      "daily_spending",
+      "lag1",
+      "lag7",
+      "lag14",
+      "lag30",
+      "mean7",
+      "mean30",
+      "weekday",
+      "month",
+      "weekend",
+      "recurring"
+    ],
+    "trainDays": [
+      30,
+      254
+    ],
+    "validationDays": [
+      255,
+      299
+    ],
+    "testDays": [
+      310,
+      364
+    ],
+    "trainUsers": [
+      0,
+      11
+    ],
+    "validationUsers": [
+      12,
+      15
+    ],
+    "testUsers": [
+      16,
+      19
+    ],
+    "validation": {
+      "moving_average": {
+        "mae": 330516.3597083334,
+        "rmse": 643832.9749143358
+      },
+      "seasonal_naive": {
+        "mae": 502152.82933333336,
+        "rmse": 1119037.0032108126
+      },
+      "random_forest_depth5": {
+        "mae": 184329.354375,
+        "rmse": 411324.8457679985
+      },
+      "xgboost_depth5": {
+        "mae": 206778.81070833333,
+        "rmse": 470870.679606535
+      },
+      "random_forest_depth10": {
+        "mae": 209249.734125,
+        "rmse": 428504.31915027933
+      },
+      "xgboost_depth10": {
+        "mae": 237535.72620833333,
+        "rmse": 494124.0194699379
+      }
+    },
+    "test": {
+      "moving_average": {
+        "mae": 275038.85779166664,
+        "rmse": 563501.7714630073
+      },
+      "seasonal_naive": {
+        "mae": 322455.2455833333,
+        "rmse": 658508.5560024737
+      },
+      "random_forest_depth5": {
+        "mae": 146242.46508333334,
+        "rmse": 351948.9897481939
+      },
+      "xgboost_depth5": {
+        "mae": 159906.23449999996,
+        "rmse": 352552.4128753924
+      },
+      "random_forest_depth10": {
+        "mae": 148376.24983333336,
+        "rmse": 353031.1004773299
+      },
+      "xgboost_depth10": {
+        "mae": 176515.64074999996,
+        "rmse": 363995.8223580771
+      }
+    },
+    "horizons": {
+      "1": {
+        "mae": 191233.64625,
+        "rmse": 401171.2598345149
+      },
+      "7": {
+        "mae": 204592.67535714287,
+        "rmse": 490548.0847388263
+      },
+      "30": {
+        "mae": 146242.46508333334,
+        "rmse": 351948.9897481939
+      }
+    },
+    "evaluation": "Rolling-origin recursive predictions; no test data or future lags enter fitting/selection"
+  },
+  "anomaly": {
+    "algorithm": "IsolationForest",
+    "features": [
+      "log_amount",
+      "hour",
+      "weekday",
+      "category",
+      "frequency",
+      "log_mean",
+      "amount_ratio",
+      "deviation"
+    ],
+    "threshold": 0.685724345274142,
+    "precision": 0.5,
+    "recall": 0.6041666666666666,
+    "f1": 0.5471698113207547,
+    "falsePositiveRate": 0.00651685393258427,
+    "confusionMatrix": [
+      [
+        4421,
+        29
+      ],
+      [
+        19,
+        29
+      ]
+    ],
+    "scoreDefinition": "negative score_samples; larger is more unusual, NOT probability"
+  },
+  "classification": {
+    "algorithm": "TF-IDF + LogisticRegression",
+    "accuracy": 1.0,
+    "macroF1": 1.0,
+    "labels": [
+      "Giải trí",
+      "Hóa đơn",
+      "Học tập",
+      "Mua sắm",
+      "Nhà ở",
+      "Sức khỏe",
+      "Ăn uống",
+      "Đi lại"
+    ],
+    "confusionMatrix": [
+      [
+        536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        565,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        524,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        566,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        599,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        568,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        578,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        562
+      ]
+    ],
+    "limitation": "Templates repeat across users; these scores do not establish generalization to unseen Vietnamese text."
+  },
+  "limitations": [
+    "Synthetic benchmark only; cannot claim production accuracy.",
+    "No confidence interval is estimated.",
+    "New category names map to Khác for anomaly inference.",
+    "Recurring dates must be supplied as known schedules, not discovered from future test spending."
+  ],
+  "trainingSeconds": 21.94
+}
