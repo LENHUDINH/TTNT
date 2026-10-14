@@ -13,6 +13,10 @@ export interface ChatConversation {
   updatedAt: string;
 }
 export interface ChatMetadata {
+  fineTuned?: boolean;
+  responseMode?: "llm" | "verified-direct";
+  followUpResolved?: boolean;
+  knowledgeTopics?: string[];
   period?: string;
   retrievedAt?: string;
   sources?: { id?: string; label: string; url?: string }[];

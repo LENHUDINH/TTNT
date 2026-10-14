@@ -2,6 +2,7 @@
 .env.*
 !.env.example
 .cache/
+.chart-data-*/
 .tools/
 **/node_modules/
 **/dist/

@@ -102,6 +102,21 @@ class ChatIntegrationTest {
             Map.of("forecast", "INSUFFICIENT_DATA")));
   }
 
+  @Test
+  void persistsFineTunedReferenceMetadataInHistory() throws Exception {
+    when(ai.generate(any())).thenReturn(
+        Map.of("content", "Random Forest kết hợp nhiều cây quyết định.",
+            "modelVersion", "finsight-qlora", "provider", "mlx",
+            "metadata", Map.of("fineTuned", true, "responseMode", "llm",
+                "followUpResolved", true, "knowledgeTopics", List.of("Random Forest"))));
+    var answer = send(owner, conversation, UUID.randomUUID().toString(), "Giải thích Random Forest");
+    assertTrue(answer.get("metadata").get("fineTuned").asBoolean());
+    assertEquals("llm", answer.get("metadata").get("responseMode").asText());
+    var saved = messages(owner, conversation).get("items").get(1).get("metadata");
+    assertTrue(saved.get("followUpResolved").asBoolean());
+    assertEquals("Random Forest", saved.get("knowledgeTopics").get(0).asText());
+  }
+
   JsonNode send(User user, long id, String key, String text) throws Exception {
     var result =
         mvc.perform(

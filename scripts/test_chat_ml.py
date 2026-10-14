@@ -21,8 +21,19 @@ with httpx.Client(base_url="http://127.0.0.1:8088", timeout=110) as c:
         meta=answer["metadata"]
         assert answer["status"]=="COMPLETED" and meta["mlStatus"]["forecast"]["status"]=="INSUFFICIENT_DATA"
         assert all(f["id"]!="forecast.total" for f in meta["facts"])
+        assert "chưa đủ dữ liệu để dự báo" in answer["content"].casefold()
+        assert "cảnh báo bất thường" not in answer["content"].casefold()
         assert any(f["id"]=="forecast.minimumHistoryDays" and f["value"]=="60" for f in meta["facts"])
         results["coldStart"]={"status":"INSUFFICIENT_DATA","noFakeForecast":True,"requirementsFromModel":True,"content":answer["content"]}
+        definition=change("POST",f"/api/chat/conversations/{conv['id']}/messages",{"content":"Giải thích Random Forest bằng ngôn ngữ dễ hiểu.","clientMessageId":uuid.uuid4().hex})
+        assert definition["status"]=="COMPLETED"
+        assert "Random Forest" in definition["metadata"].get("knowledgeTopics",[])
+        assert "cây" in definition["content"].casefold()
+        assert definition["metadata"].get("facts")==[]
+        followup=change("POST",f"/api/chat/conversations/{conv['id']}/messages",{"content":"Nói rõ hơn","clientMessageId":uuid.uuid4().hex})
+        assert followup["status"]=="COMPLETED" and followup["metadata"].get("followUpResolved")
+        assert "Random Forest" in followup["metadata"].get("knowledgeTopics",[])
+        results["referenceGroundingAndFollowup"]={"passed":True,"noAccountFactsSent":True}
     finally:
         change("DELETE","/api/auth/account",{"email":email,"password":password})
     change("POST","/api/auth/login",{"email":"demo01@finsight.local","password":"DemoFinSight2026!"})

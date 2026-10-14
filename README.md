@@ -65,7 +65,7 @@ ai-service/.venv/bin/python scripts/seed_demo.py --accounts 12 --reset
 
 Model/dataset tại ai-service/artifacts và datasets. Training tạo candidate offline; chỉ activate sau khi kiểm tra baseline, validation và checksum. Thư mục candidate phải chưa tồn tại; mỗi lần train dùng tên mới. `active-manifest.json` trỏ đến version bất biến và giữ model trước đó để rollback. CSV/joblib local bị Git ignore để có thể tái tạo từ seed; báo cáo evaluation được lưu. Report công bố metrics thật, gồm hạn chế precision và corpus giả lập; không có metric hoặc confidence giả.
 
-Chat dùng LLM đã huấn luyện sẵn Qwen3 qua Ollama; không tuyên bố đã fine-tune LLM. Mô hình ML tài chính được huấn luyện lại bằng dữ liệu tổng hợp, không dùng chat/dữ liệu cá nhân để train. Xem [vận hành và kiểm chứng chat](docs/AI_CHAT.md) và [AI_MODEL_REPORT](docs/AI_MODEL_REPORT.md).
+Chat mặc định dùng Qwen3 qua Ollama. Trên máy phát triển đã có bản QLoRA Qwen3-1.7B được huấn luyện bằng corpus tiếng Việt giả lập, kết hợp tra cứu tài liệu đã kiểm chứng. Xem [quy trình huấn luyện](docs/PROFESSIONAL_AI_TRAINING.md) và [báo cáo chạy](reports/AI_Training_Report_20261014.md). Mô hình ML tài chính được huấn luyện lại bằng dữ liệu tổng hợp, không dùng chat/dữ liệu cá nhân để train. Xem [vận hành và kiểm chứng chat](docs/AI_CHAT.md) và [AI_MODEL_REPORT](docs/AI_MODEL_REPORT.md).
 
 ## Kiểm thử và tài liệu
 

@@ -16,9 +16,12 @@ services:
     networks: [internal]
   ai:
     build: ./ai-service
+    volumes: [ai_models:/app/artifacts]
     environment:
       AI_SERVICE_KEY: ${AI_SERVICE_KEY:?Set AI_SERVICE_KEY}
       CHAT_PROVIDER: ${CHAT_PROVIDER:-ollama}
+      CHAT_FINE_TUNED: ${CHAT_FINE_TUNED:-false}
+      MLX_URL: ${CONTAINER_MLX_URL:-http://host.docker.internal:11435}
       CHAT_MODEL: ${CHAT_MODEL:-qwen3:1.7b}
       OLLAMA_URL: ${CONTAINER_OLLAMA_URL:-http://host.docker.internal:11434}
       CHAT_API_URL: ${CHAT_API_URL:-}
@@ -60,3 +63,4 @@ networks:
   internal:
 volumes:
   mysql_data:
+  ai_models:

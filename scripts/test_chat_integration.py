@@ -1,4 +1,4 @@
-"""Real running MariaDB + Spring + FastAPI + Ollama chat acceptance checks.
+"""Real running MariaDB + Spring + FastAPI + local LLM chat acceptance checks.
 
 Creates and deletes only its two temporary accounts. No financial writes on demo users.
 """
@@ -46,7 +46,7 @@ try:
         ok(c, "POST", "/api/auth/login", {"email": email, "password": PASSWORD})
     a, b = clients
     status = a.get("/api/chat/status").json()
-    assert status["configured"] and status["provider"] == "ollama" and not status["external"]
+    assert status["configured"] and status["provider"] in {"ollama", "mlx"} and not status["external"]
     results["realLocalEngine"] = {k:status[k] for k in ("provider", "model", "external")}
     assert not a.get("/api/chat/preferences").json()["externalConsent"]
     conversation = ok(a, "POST", "/api/chat/conversations", {"title":"QA private history"})
@@ -70,7 +70,7 @@ try:
     assert Decimal(facts["balance"]["value"]) == Decimal("750000.00")
     assert "750.000 ₫" in response["content"]
     assert response["metadata"]["grounding"] == "verified-fact-placeholders"
-    assert response["metadata"]["fineTuned"] is False
+    assert response["metadata"]["fineTuned"] == (status["provider"] == "mlx" and response["metadata"].get("responseMode") == "llm")
     replay = ok(a, "POST", path + "/messages", payload)
     assert replay["id"] == response["id"]
     assert a.get(path + "/messages").json()["total"] == 2

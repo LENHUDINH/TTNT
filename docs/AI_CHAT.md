@@ -68,3 +68,51 @@ Bản sao lưu XAMPP trước V3: `runtime/backups/20261011-001122-pre-chat/fins
 LLM nhỏ ưu tiên khả năng chạy trên máy8GB, có thể diễn giải chưa đầy đủ hoặc yêu cầu retry. Corpus classifier giữ riêng64 câu test nhưng còn nhỏ; anomaly precision50% trên benchmark tổng hợp. Chưa fine-tune LLM, chưa đánh giá tư vấn trên dữ liệu tài chính thực, chưa có streaming token hoặc distributed rate limit. Tư vấn tập trung dữ liệu và quản lý thu/chi/ngân sách/tiết kiệm trong ứng dụng.
 
 API Ollama sử dụng theo [tài liệu chính thức](https://github.com/ollama/ollama/blob/main/docs/api.md); cấu hình model tham chiếu [Qwen3 1.7B](https://ollama.com/library/qwen3:1.7b).
+
+## Cập nhật chất lượng hội thoại — 14/10/2026
+
+- Câu hỏi kiến thức được tách khỏi dữ liệu tài khoản; cho phép số trong ví dụ
+  giả định. Các định nghĩa thường gặp và lời chào có câu trả lời được kiểm tra.
+- Các câu hỏi tổng số dư, tổng thu/chi khớp mẫu rõ ràng dùng giá trị Decimal
+  đã xác minh, không nhờ LLM tự tính. Câu có tên ví hoặc kỳ khác không tự dùng
+  tổng tiền thay cho dữ liệu được yêu cầu.
+- Chuẩn hóa tiếng Việt có/không dấu cho định tuyến và chọn bằng chứng.
+- Câu tiếp nối ngắn được nối với chủ đề từ các lượt người dùng, không lấy
+  số tiền từ câu trả lời cũ làm dữ liệu mới. Đổi chân trời dự báo 1/7/30 ngày
+  được truyền tới bước tính ML.
+- Hỏi kỳ khác với snapshot sẽ yêu cầu đổi bộ chọn tháng. Tổng theo ngày/tuần
+  hoặc so sánh nhiều tháng chưa được truy vấn tự động trong luồng chat.
+- Tỷ lệ chênh lệch thu–chi trên thu nhập được tính bằng Decimal khi thu nhập
+  dương; nhãn phân biệt với tiền thực góp vào mục tiêu tiết kiệm.
+- Metadata có `responseMode`, `followUpResolved`; kiến thức chung dùng
+  `grounding=general-education`, tài chính vẫn dùng bằng chứng đã kiểm tra.
+
+Đây là nâng cấp định tuyến, dữ liệu và kiểm tra câu trả lời, không phải fine-tune
+hoặc thay model Qwen3:1.7b. Câu hỏi mở vẫn phụ thuộc năng lực mô hình; chưa có
+đánh giá chất lượng toàn diện cho mọi kiểu câu hỏi. Kiểm thử bổ sung nằm trong
+`ai-service/tests/test_chat.py`; luồng API thật có kiểm tra quyền sở hữu,
+CSRF, số tiền, lịch sử, gửi trùng và hủy phản hồi qua
+`scripts/test_chat_integration.py` với tài khoản tạm tự dọn dẹp.
+
+## QLoRA local và tài liệu tham chiếu
+
+Cấu hình mặc định trên máy mới vẫn là Ollama pretrained. Bản chạy local ngày
+14/10/2026 có QLoRA trên Qwen3-1.7B 4-bit, corpus 148 train / 41 validation /
+41 test, 160 bước. Không dùng chat hoặc dữ liệu tài chính cá nhân để fine-tune.
+
+Đánh giá adapter đứng riêng cho thấy JSON đúng chưa đủ: một số định nghĩa sai,
+nên bản đó không được duyệt. Adapter kết hợp tra cứu `app/chat_knowledge.py`
+được đánh giá riêng trên 41 câu mới và đọc kiểm tra nội dung trước khi phục vụ.
+Câu kiến thức không gửi snapshot tài khoản. Metadata lưu `responseMode`,
+`followUpResolved`, `knowledgeTopics`; `fineTuned` chỉ true khi thực sự dùng
+LLM fine-tune, không phải khi trả bằng renderer trực tiếp.
+
+Chạy server đã được duyệt:
+
+```sh
+sh scripts/run_finetuned_chat.sh runtime/professional-training-20261014
+```
+
+MLX local ở cổng 11435; app dùng `CHAT_PROVIDER=mlx`. Kiểm tra và tài liệu
+được mô tả trong `docs/PROFESSIONAL_AI_TRAINING.md`. Các corpus đều nhỏ và
+giả lập; chưa thể cam kết độ chính xác cho mọi câu hỏi của người dùng thực.
